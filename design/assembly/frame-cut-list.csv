@@ -1,0 +1,3 @@
+part,quantity,stock_front_width_mm,stock_depth_mm,long_point_length_mm,short_point_length_mm,ends
+top_bottom,2,19.05,76.2,829.100,791.000,45 degree miters
+left_right,2,19.05,76.2,460.650,422.550,45 degree miters

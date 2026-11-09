@@ -1,0 +1,31 @@
+{
+  "viewing_area_mm": [
+    596.9,
+    336.55
+  ],
+  "factory_bezel_widths_mm": {
+    "top": 34,
+    "bottom": 48,
+    "left": 33,
+    "right": 33
+  },
+  "outer_size_mm": [
+    662.9,
+    418.55,
+    44
+  ],
+  "glass_front_z_mm": 0,
+  "factory_front_z_mm": 7,
+  "housing_back_z_mm": -37,
+  "outer_center_xy_mm": [
+    0,
+    -7.0
+  ],
+  "glass_proxy_thickness_mm": 1,
+  "assumptions": [
+    "Square edges",
+    "44 mm is total front-to-back depth",
+    "Display and glass modeled as one solid unit",
+    "Stand omitted"
+  ]
+}

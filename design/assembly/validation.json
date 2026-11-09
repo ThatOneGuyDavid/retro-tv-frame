@@ -1,0 +1,1390 @@
+{
+  "wood_thickness_mm": 3.175,
+  "glue_allowance_mm": 0.2,
+  "faceplate_size_mm": [
+    803.2,
+    434.75
+  ],
+  "frame": {
+    "stock_mm": [
+      19.05,
+      76.2
+    ],
+    "groove_depth_mm": 6.35,
+    "groove_width_mm": 3.5749999999999997,
+    "groove_edge_allowance_mm": 0.25,
+    "inside_bounds_xy_mm": [
+      -342.5,
+      -218.275,
+      448.5,
+      204.275
+    ],
+    "outside_size_mm": [
+      829.1,
+      460.65000000000003
+    ],
+    "front_z_mm": 36.375,
+    "rear_z_mm": -39.825,
+    "housing_clearance_left_mm": 11.050000000000011,
+    "housing_clearance_top_mm": 2.0,
+    "housing_clearance_bottom_mm": 2.0,
+    "bezel_flange_left_clearance_mm": 2.0
+  },
+  "gaps": {
+    "bezel_to_grille_flange_x_mm": 2.0,
+    "bezel_to_knob_plate_x_mm": -2.0,
+    "lower_dial_to_grille_visible_y_mm": 24.0,
+    "screen_flange_to_wood_glue_gap_mm": 0.2,
+    "grille_to_wood_glue_gap_mm": 0.2,
+    "knob_plate_to_wood_glue_gap_mm": 0.2,
+    "knob_plate_to_bezel_z_mm": 3.575000000000003,
+    "trim_to_knob_plate_right_mm": 2.0,
+    "trim_to_bezel_top_bottom_mm": 19.275000000000006,
+    "trim_to_bezel_left_mm": 22.0,
+    "wood_edge_to_grille_bottom_mm": 26.375
+  },
+  "template": {
+    "total_pdf_pages": 11,
+    "page_inches": [
+      8.5,
+      11
+    ],
+    "columns": 5,
+    "rows": 2,
+    "overlap_mm": 10,
+    "tiles": [
+      {
+        "row": 1,
+        "column": 1,
+        "world_bounds_mm": [
+          -348.6,
+          -43.62499999999997,
+          -158.10000000000002,
+          210.375
+        ]
+      },
+      {
+        "row": 1,
+        "column": 2,
+        "world_bounds_mm": [
+          -168.10000000000002,
+          -43.62499999999997,
+          22.399999999999977,
+          210.375
+        ]
+      },
+      {
+        "row": 1,
+        "column": 3,
+        "world_bounds_mm": [
+          12.399999999999977,
+          -43.62499999999997,
+          202.89999999999998,
+          210.375
+        ]
+      },
+      {
+        "row": 1,
+        "column": 4,
+        "world_bounds_mm": [
+          192.89999999999998,
+          -43.62499999999997,
+          383.4,
+          210.375
+        ]
+      },
+      {
+        "row": 1,
+        "column": 5,
+        "world_bounds_mm": [
+          373.4,
+          -43.62499999999997,
+          563.9,
+          210.375
+        ]
+      },
+      {
+        "row": 2,
+        "column": 1,
+        "world_bounds_mm": [
+          -348.6,
+          -287.62499999999994,
+          -158.10000000000002,
+          -33.62499999999997
+        ]
+      },
+      {
+        "row": 2,
+        "column": 2,
+        "world_bounds_mm": [
+          -168.10000000000002,
+          -287.62499999999994,
+          22.399999999999977,
+          -33.62499999999997
+        ]
+      },
+      {
+        "row": 2,
+        "column": 3,
+        "world_bounds_mm": [
+          12.399999999999977,
+          -287.62499999999994,
+          202.89999999999998,
+          -33.62499999999997
+        ]
+      },
+      {
+        "row": 2,
+        "column": 4,
+        "world_bounds_mm": [
+          192.89999999999998,
+          -287.62499999999994,
+          383.4,
+          -33.62499999999997
+        ]
+      },
+      {
+        "row": 2,
+        "column": 5,
+        "world_bounds_mm": [
+          373.4,
+          -287.62499999999994,
+          563.9,
+          -33.62499999999997
+        ]
+      }
+    ]
+  },
+  "parts": {
+    "display": {
+      "bounds_mm": [
+        [
+          -331.45,
+          -216.275,
+          -37.0
+        ],
+        [
+          331.45,
+          202.275,
+          7.0
+        ]
+      ],
+      "watertight": true,
+      "positive_volume": true
+    },
+    "wood": {
+      "bounds_mm": [
+        [
+          -348.6,
+          -224.375,
+          30.2
+        ],
+        [
+          454.6,
+          210.375,
+          33.375
+        ]
+      ],
+      "watertight": true,
+      "positive_volume": true
+    },
+    "bezel": {
+      "bounds_mm": [
+        [
+          -340.5,
+          -192.0,
+          1.0
+        ],
+        [
+          340.5,
+          192.0,
+          30.0
+        ]
+      ],
+      "watertight": true,
+      "positive_volume": true
+    },
+    "grille": {
+      "bounds_mm": [
+        [
+          342.5,
+          -198.0,
+          27.0
+        ],
+        [
+          442.5,
+          -6.0,
+          30.0
+        ]
+      ],
+      "watertight": true,
+      "positive_volume": true
+    },
+    "knob-mounting-plate": {
+      "bounds_mm": [
+        [
+          338.5,
+          -3.0,
+          33.575
+        ],
+        [
+          446.5,
+          183.0,
+          36.575
+        ]
+      ],
+      "watertight": true,
+      "positive_volume": true
+    },
+    "wood-frame-top": {
+      "bounds_mm": [
+        [
+          -361.55,
+          204.275,
+          -39.825
+        ],
+        [
+          467.55,
+          223.325,
+          36.375
+        ]
+      ],
+      "watertight": true,
+      "positive_volume": true
+    },
+    "wood-frame-bottom": {
+      "bounds_mm": [
+        [
+          -361.55,
+          -237.325,
+          -39.825
+        ],
+        [
+          467.55,
+          -218.275,
+          36.375
+        ]
+      ],
+      "watertight": true,
+      "positive_volume": true
+    },
+    "wood-frame-left": {
+      "bounds_mm": [
+        [
+          -361.55,
+          -237.325,
+          -39.825
+        ],
+        [
+          -342.5,
+          223.325,
+          36.375
+        ]
+      ],
+      "watertight": true,
+      "positive_volume": true
+    },
+    "wood-frame-right": {
+      "bounds_mm": [
+        [
+          448.5,
+          -237.325,
+          -39.825
+        ],
+        [
+          467.55,
+          223.325,
+          36.375
+        ]
+      ],
+      "watertight": true,
+      "positive_volume": true
+    },
+    "joining-key-bottom": {
+      "bounds_mm": [
+        [
+          -13.8,
+          -180.8,
+          10.1
+        ],
+        [
+          13.8,
+          -171.2,
+          11.1
+        ]
+      ],
+      "watertight": true,
+      "positive_volume": true
+    },
+    "joining-key-top": {
+      "bounds_mm": [
+        [
+          -13.8,
+          171.2,
+          10.1
+        ],
+        [
+          13.8,
+          180.8,
+          11.1
+        ]
+      ],
+      "watertight": true,
+      "positive_volume": true
+    },
+    "knob-1/dial-plate": {
+      "bounds_mm": [
+        [
+          354.5,
+          92.0,
+          36.775
+        ],
+        [
+          430.5,
+          168.0,
+          40.775
+        ]
+      ],
+      "watertight": true,
+      "positive_volume": true
+    },
+    "knob-1/brass-trim": {
+      "bounds_mm": [
+        [
+          354.7,
+          92.2,
+          38.375
+        ],
+        [
+          430.3,
+          167.8,
+          40.775
+        ]
+      ],
+      "watertight": true,
+      "positive_volume": true
+    },
+    "knob-1/fluted-grip": {
+      "bounds_mm": [
+        [
+          369.5277,
+          107.0277,
+          45.775
+        ],
+        [
+          415.4723,
+          152.9723,
+          63.775
+        ]
+      ],
+      "watertight": true,
+      "positive_volume": true
+    },
+    "knob-1/center-cap": {
+      "bounds_mm": [
+        [
+          372.7,
+          110.2,
+          61.775
+        ],
+        [
+          412.3,
+          149.8,
+          64.575
+        ]
+      ],
+      "watertight": true,
+      "positive_volume": true
+    },
+    "knob-1/blank-hub": {
+      "bounds_mm": [
+        [
+          375.5,
+          113.0,
+          42.775
+        ],
+        [
+          409.5,
+          147.0,
+          53.775
+        ]
+      ],
+      "watertight": true,
+      "positive_volume": true
+    },
+    "knob-2/dial-plate": {
+      "bounds_mm": [
+        [
+          354.5,
+          2.0,
+          36.775
+        ],
+        [
+          430.5,
+          78.0,
+          40.775
+        ]
+      ],
+      "watertight": true,
+      "positive_volume": true
+    },
+    "knob-2/brass-trim": {
+      "bounds_mm": [
+        [
+          354.7,
+          2.2,
+          38.375
+        ],
+        [
+          430.3,
+          77.8,
+          40.775
+        ]
+      ],
+      "watertight": true,
+      "positive_volume": true
+    },
+    "knob-2/fluted-grip": {
+      "bounds_mm": [
+        [
+          369.5277,
+          17.0277,
+          45.775
+        ],
+        [
+          415.4723,
+          62.9723,
+          63.775
+        ]
+      ],
+      "watertight": true,
+      "positive_volume": true
+    },
+    "knob-2/center-cap": {
+      "bounds_mm": [
+        [
+          372.7,
+          20.2,
+          61.775
+        ],
+        [
+          412.3,
+          59.8,
+          64.575
+        ]
+      ],
+      "watertight": true,
+      "positive_volume": true
+    },
+    "knob-2/blank-hub": {
+      "bounds_mm": [
+        [
+          375.5,
+          23.0,
+          42.775
+        ],
+        [
+          409.5,
+          57.0,
+          53.775
+        ]
+      ],
+      "watertight": true,
+      "positive_volume": true
+    }
+  },
+  "pair_checks": {
+    "display / wood": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "display / bezel": {
+      "method": "solid intersection",
+      "intersection_mm3": 0.0
+    },
+    "display / grille": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "display / knob-mounting-plate": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "display / wood-frame-top": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "display / wood-frame-bottom": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "display / wood-frame-left": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "display / wood-frame-right": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "display / joining-key-bottom": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "display / joining-key-top": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "display / knob-1/dial-plate": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "display / knob-1/brass-trim": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "display / knob-1/fluted-grip": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "display / knob-1/center-cap": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "display / knob-1/blank-hub": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "display / knob-2/dial-plate": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "display / knob-2/brass-trim": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "display / knob-2/fluted-grip": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "display / knob-2/center-cap": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "display / knob-2/blank-hub": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood / bezel": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood / grille": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood / knob-mounting-plate": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood / wood-frame-top": {
+      "method": "solid intersection",
+      "intersection_mm3": 0.0
+    },
+    "wood / wood-frame-bottom": {
+      "method": "solid intersection",
+      "intersection_mm3": 0.0
+    },
+    "wood / wood-frame-left": {
+      "method": "solid intersection",
+      "intersection_mm3": 0.0
+    },
+    "wood / wood-frame-right": {
+      "method": "solid intersection",
+      "intersection_mm3": 0.0
+    },
+    "wood / joining-key-bottom": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood / joining-key-top": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood / knob-1/dial-plate": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood / knob-1/brass-trim": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood / knob-1/fluted-grip": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood / knob-1/center-cap": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood / knob-1/blank-hub": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood / knob-2/dial-plate": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood / knob-2/brass-trim": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood / knob-2/fluted-grip": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood / knob-2/center-cap": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood / knob-2/blank-hub": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "bezel / grille": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "bezel / knob-mounting-plate": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "bezel / wood-frame-top": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "bezel / wood-frame-bottom": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "bezel / wood-frame-left": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "bezel / wood-frame-right": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "bezel / joining-key-bottom": {
+      "method": "solid intersection",
+      "intersection_mm3": 0.0
+    },
+    "bezel / joining-key-top": {
+      "method": "solid intersection",
+      "intersection_mm3": 0.0
+    },
+    "bezel / knob-1/dial-plate": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "bezel / knob-1/brass-trim": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "bezel / knob-1/fluted-grip": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "bezel / knob-1/center-cap": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "bezel / knob-1/blank-hub": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "bezel / knob-2/dial-plate": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "bezel / knob-2/brass-trim": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "bezel / knob-2/fluted-grip": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "bezel / knob-2/center-cap": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "bezel / knob-2/blank-hub": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "grille / knob-mounting-plate": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "grille / wood-frame-top": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "grille / wood-frame-bottom": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "grille / wood-frame-left": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "grille / wood-frame-right": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "grille / joining-key-bottom": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "grille / joining-key-top": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "grille / knob-1/dial-plate": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "grille / knob-1/brass-trim": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "grille / knob-1/fluted-grip": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "grille / knob-1/center-cap": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "grille / knob-1/blank-hub": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "grille / knob-2/dial-plate": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "grille / knob-2/brass-trim": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "grille / knob-2/fluted-grip": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "grille / knob-2/center-cap": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "grille / knob-2/blank-hub": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "knob-mounting-plate / wood-frame-top": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "knob-mounting-plate / wood-frame-bottom": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "knob-mounting-plate / wood-frame-left": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "knob-mounting-plate / wood-frame-right": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "knob-mounting-plate / joining-key-bottom": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "knob-mounting-plate / joining-key-top": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "knob-mounting-plate / knob-1/dial-plate": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "knob-mounting-plate / knob-1/brass-trim": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "knob-mounting-plate / knob-1/fluted-grip": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "knob-mounting-plate / knob-1/center-cap": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "knob-mounting-plate / knob-1/blank-hub": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "knob-mounting-plate / knob-2/dial-plate": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "knob-mounting-plate / knob-2/brass-trim": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "knob-mounting-plate / knob-2/fluted-grip": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "knob-mounting-plate / knob-2/center-cap": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "knob-mounting-plate / knob-2/blank-hub": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood-frame-top / wood-frame-bottom": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood-frame-top / wood-frame-left": {
+      "method": "solid intersection",
+      "intersection_mm3": 0.001128
+    },
+    "wood-frame-top / wood-frame-right": {
+      "method": "solid intersection",
+      "intersection_mm3": 0.001926
+    },
+    "wood-frame-top / joining-key-bottom": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood-frame-top / joining-key-top": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood-frame-top / knob-1/dial-plate": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood-frame-top / knob-1/brass-trim": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood-frame-top / knob-1/fluted-grip": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood-frame-top / knob-1/center-cap": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood-frame-top / knob-1/blank-hub": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood-frame-top / knob-2/dial-plate": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood-frame-top / knob-2/brass-trim": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood-frame-top / knob-2/fluted-grip": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood-frame-top / knob-2/center-cap": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood-frame-top / knob-2/blank-hub": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood-frame-bottom / wood-frame-left": {
+      "method": "solid intersection",
+      "intersection_mm3": 0.001926
+    },
+    "wood-frame-bottom / wood-frame-right": {
+      "method": "solid intersection",
+      "intersection_mm3": 0.001128
+    },
+    "wood-frame-bottom / joining-key-bottom": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood-frame-bottom / joining-key-top": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood-frame-bottom / knob-1/dial-plate": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood-frame-bottom / knob-1/brass-trim": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood-frame-bottom / knob-1/fluted-grip": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood-frame-bottom / knob-1/center-cap": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood-frame-bottom / knob-1/blank-hub": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood-frame-bottom / knob-2/dial-plate": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood-frame-bottom / knob-2/brass-trim": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood-frame-bottom / knob-2/fluted-grip": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood-frame-bottom / knob-2/center-cap": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood-frame-bottom / knob-2/blank-hub": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood-frame-left / wood-frame-right": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood-frame-left / joining-key-bottom": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood-frame-left / joining-key-top": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood-frame-left / knob-1/dial-plate": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood-frame-left / knob-1/brass-trim": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood-frame-left / knob-1/fluted-grip": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood-frame-left / knob-1/center-cap": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood-frame-left / knob-1/blank-hub": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood-frame-left / knob-2/dial-plate": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood-frame-left / knob-2/brass-trim": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood-frame-left / knob-2/fluted-grip": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood-frame-left / knob-2/center-cap": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood-frame-left / knob-2/blank-hub": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood-frame-right / joining-key-bottom": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood-frame-right / joining-key-top": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood-frame-right / knob-1/dial-plate": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood-frame-right / knob-1/brass-trim": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood-frame-right / knob-1/fluted-grip": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood-frame-right / knob-1/center-cap": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood-frame-right / knob-1/blank-hub": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood-frame-right / knob-2/dial-plate": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood-frame-right / knob-2/brass-trim": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood-frame-right / knob-2/fluted-grip": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood-frame-right / knob-2/center-cap": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "wood-frame-right / knob-2/blank-hub": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "joining-key-bottom / joining-key-top": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "joining-key-bottom / knob-1/dial-plate": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "joining-key-bottom / knob-1/brass-trim": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "joining-key-bottom / knob-1/fluted-grip": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "joining-key-bottom / knob-1/center-cap": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "joining-key-bottom / knob-1/blank-hub": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "joining-key-bottom / knob-2/dial-plate": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "joining-key-bottom / knob-2/brass-trim": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "joining-key-bottom / knob-2/fluted-grip": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "joining-key-bottom / knob-2/center-cap": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "joining-key-bottom / knob-2/blank-hub": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "joining-key-top / knob-1/dial-plate": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "joining-key-top / knob-1/brass-trim": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "joining-key-top / knob-1/fluted-grip": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "joining-key-top / knob-1/center-cap": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "joining-key-top / knob-1/blank-hub": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "joining-key-top / knob-2/dial-plate": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "joining-key-top / knob-2/brass-trim": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "joining-key-top / knob-2/fluted-grip": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "joining-key-top / knob-2/center-cap": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "joining-key-top / knob-2/blank-hub": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "knob-1/dial-plate / knob-1/brass-trim": {
+      "method": "solid intersection",
+      "intersection_mm3": 0.0
+    },
+    "knob-1/dial-plate / knob-1/fluted-grip": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "knob-1/dial-plate / knob-1/center-cap": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "knob-1/dial-plate / knob-1/blank-hub": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "knob-1/dial-plate / knob-2/dial-plate": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "knob-1/dial-plate / knob-2/brass-trim": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "knob-1/dial-plate / knob-2/fluted-grip": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "knob-1/dial-plate / knob-2/center-cap": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "knob-1/dial-plate / knob-2/blank-hub": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "knob-1/brass-trim / knob-1/fluted-grip": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "knob-1/brass-trim / knob-1/center-cap": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "knob-1/brass-trim / knob-1/blank-hub": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "knob-1/brass-trim / knob-2/dial-plate": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "knob-1/brass-trim / knob-2/brass-trim": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "knob-1/brass-trim / knob-2/fluted-grip": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "knob-1/brass-trim / knob-2/center-cap": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "knob-1/brass-trim / knob-2/blank-hub": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "knob-1/fluted-grip / knob-1/center-cap": {
+      "method": "solid intersection",
+      "intersection_mm3": 0.0
+    },
+    "knob-1/fluted-grip / knob-1/blank-hub": {
+      "method": "solid intersection",
+      "intersection_mm3": 0.0
+    },
+    "knob-1/fluted-grip / knob-2/dial-plate": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "knob-1/fluted-grip / knob-2/brass-trim": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "knob-1/fluted-grip / knob-2/fluted-grip": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "knob-1/fluted-grip / knob-2/center-cap": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "knob-1/fluted-grip / knob-2/blank-hub": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "knob-1/center-cap / knob-1/blank-hub": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "knob-1/center-cap / knob-2/dial-plate": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "knob-1/center-cap / knob-2/brass-trim": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "knob-1/center-cap / knob-2/fluted-grip": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "knob-1/center-cap / knob-2/center-cap": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "knob-1/center-cap / knob-2/blank-hub": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "knob-1/blank-hub / knob-2/dial-plate": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "knob-1/blank-hub / knob-2/brass-trim": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "knob-1/blank-hub / knob-2/fluted-grip": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "knob-1/blank-hub / knob-2/center-cap": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "knob-1/blank-hub / knob-2/blank-hub": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "knob-2/dial-plate / knob-2/brass-trim": {
+      "method": "solid intersection",
+      "intersection_mm3": 0.0
+    },
+    "knob-2/dial-plate / knob-2/fluted-grip": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "knob-2/dial-plate / knob-2/center-cap": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "knob-2/dial-plate / knob-2/blank-hub": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "knob-2/brass-trim / knob-2/fluted-grip": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "knob-2/brass-trim / knob-2/center-cap": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "knob-2/brass-trim / knob-2/blank-hub": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    },
+    "knob-2/fluted-grip / knob-2/center-cap": {
+      "method": "solid intersection",
+      "intersection_mm3": 0.0
+    },
+    "knob-2/fluted-grip / knob-2/blank-hub": {
+      "method": "solid intersection",
+      "intersection_mm3": 0.0
+    },
+    "knob-2/center-cap / knob-2/blank-hub": {
+      "method": "separated bounding boxes",
+      "intersection_mm3": 0.0
+    }
+  },
+  "source_sha256": {
+    "bezel/bezel-assembled.stl": "c283cd00823624ad4632dc67f02932dde7ba4b0a377e753e7d232ddfb1da591e",
+    "grille/speaker-grille.stl": "4e3d562aca783d57dcba56b16d19c792a1dc52effc34021036935a829a7eb559",
+    "knobs/dial-plate.stl": "44b593945ca94531ec0190027e35ab4d1cfe9be55d24c244b10fc742098d1ed8",
+    "knobs/brass-trim.stl": "8cf50bab00d55615cf7eb150d8c48f35f2bb24b8caf1d421d7ca1db3cf4f8657",
+    "knobs/fluted-grip.stl": "7281b2de5f05d4a0744c01aa5c5429a70a05280a01e36b0b71e3cddbd61469e1",
+    "knobs/center-cap.stl": "cf9125d7bbcdc4398456d68536fe4996a3c231d197b7d76add79ba2fc83f5532",
+    "knobs/blank-hub.stl": "43aa4b534658efb32fb4dac77d59370b42d0d5d00e2f23825c15909700054c73"
+  },
+  "display_fit": {
+    "monitor_bounds_mm": [
+      [
+        -331.45,
+        -216.275,
+        -37.0
+      ],
+      [
+        331.45,
+        202.275,
+        7.0
+      ]
+    ],
+    "glass_bounds_mm": [
+      [
+        -298.45,
+        -168.275,
+        -1.0
+      ],
+      [
+        298.45,
+        168.275,
+        0.0
+      ]
+    ],
+    "top_faceplate_margin_beyond_housing_mm": 8.1,
+    "bottom_faceplate_margin_beyond_housing_mm": 8.1,
+    "minimum_existing_bezel_z_mm": 1.0,
+    "post_to_factory_front_glue_gap_mm": 0.2,
+    "inner_lip_rear_above_glass_mm": 1.0,
+    "joint_pocket_to_inner_opening_mm": 8.0,
+    "required_joint_clearance_mm": 6.0,
+    "requested_glass_clearance_mm": 1.0,
+    "requested_standoffs": {
+      "top": 4,
+      "bottom": 4,
+      "left": 2,
+      "right": 2,
+      "added": true
+    }
+  },
+  "new_cut_template_generated": true,
+  "physical_fit_glue_strength_and_hardware_verified": false
+}

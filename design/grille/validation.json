@@ -1,0 +1,29 @@
+{
+  "speaker-grille": {
+    "watertight": true,
+    "surface_components": 1,
+    "positive_volume": true,
+    "bounds_mm": [
+      100.0,
+      192.0,
+      3.0
+    ]
+  },
+  "perforation-test": {
+    "watertight": true,
+    "surface_components": 1,
+    "positive_volume": true,
+    "bounds_mm": [
+      42.0,
+      42.0,
+      3.0
+    ]
+  },
+  "pattern": {
+    "hole_count": 240,
+    "hole_diameter_mm": 4.8,
+    "pitch_mm": 7.0,
+    "minimum_web_mm": 2.2,
+    "visible_open_area_percent": 27.2
+  }
+}

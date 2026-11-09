@@ -1,0 +1,72 @@
+{
+  "dial-plate": {
+    "watertight": true,
+    "surface_components": 1,
+    "positive_volume": true,
+    "bounds_mm": [
+      76.0,
+      76.0,
+      4.0
+    ],
+    "solid_volume_cm3": 15.325
+  },
+  "brass-trim": {
+    "watertight": true,
+    "surface_components": 1,
+    "positive_volume": true,
+    "bounds_mm": [
+      75.6,
+      75.6,
+      2.4
+    ],
+    "solid_volume_cm3": 1.954
+  },
+  "fluted-grip": {
+    "watertight": true,
+    "surface_components": 1,
+    "positive_volume": true,
+    "bounds_mm": [
+      45.945,
+      45.945,
+      18.0
+    ],
+    "solid_volume_cm3": 24.21
+  },
+  "center-cap": {
+    "watertight": true,
+    "surface_components": 1,
+    "positive_volume": true,
+    "bounds_mm": [
+      39.6,
+      39.6,
+      2.8
+    ],
+    "solid_volume_cm3": 2.457
+  },
+  "blank-hub": {
+    "watertight": true,
+    "surface_components": 1,
+    "positive_volume": true,
+    "bounds_mm": [
+      34.0,
+      34.0,
+      11.0
+    ],
+    "solid_volume_cm3": 4.621
+  },
+  "assembly_checks": {
+    "pair_intersection_volume_mm3": {
+      "dial-plate / brass-trim": 0.0,
+      "dial-plate / fluted-grip": 0.0,
+      "dial-plate / center-cap": 0.0,
+      "dial-plate / blank-hub": 0.0,
+      "brass-trim / fluted-grip": 0.0,
+      "brass-trim / center-cap": 0.0,
+      "brass-trim / blank-hub": 0.0,
+      "fluted-grip / center-cap": 0.0,
+      "fluted-grip / blank-hub": 0.0,
+      "center-cap / blank-hub": 0.0
+    },
+    "hardware_and_rotation_tested": false
+  }
+}

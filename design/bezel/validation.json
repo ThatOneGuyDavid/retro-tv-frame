@@ -1,0 +1,334 @@
+{
+  "left": {
+    "watertight": true,
+    "positive_volume": true,
+    "surface_components": 1,
+    "bounds_mm": [
+      340.5,
+      384.0,
+      29.0
+    ],
+    "volume_cm3": 110.636
+  },
+  "right": {
+    "watertight": true,
+    "positive_volume": true,
+    "surface_components": 1,
+    "bounds_mm": [
+      340.5,
+      384.0,
+      29.0
+    ],
+    "volume_cm3": 110.636
+  },
+  "joint-test-left": {
+    "watertight": true,
+    "positive_volume": true,
+    "surface_components": 1,
+    "bounds_mm": [
+      20.0,
+      24.0,
+      25.6636
+    ],
+    "volume_cm3": 2.875
+  },
+  "joint-test-right": {
+    "watertight": true,
+    "positive_volume": true,
+    "surface_components": 1,
+    "bounds_mm": [
+      20.0,
+      24.0,
+      25.6636
+    ],
+    "volume_cm3": 2.875
+  },
+  "joining-key": {
+    "watertight": true,
+    "positive_volume": true,
+    "surface_components": 1,
+    "bounds_mm": [
+      27.6,
+      9.6,
+      1.0
+    ],
+    "volume_cm3": 0.265
+  },
+  "display-fit-test": {
+    "watertight": true,
+    "positive_volume": true,
+    "surface_components": 1,
+    "bounds_mm": [
+      24.0,
+      29.2492,
+      29.0
+    ],
+    "volume_cm3": 2.655
+  },
+  "alignment-fit-test": {
+    "watertight": true,
+    "positive_volume": true,
+    "surface_components": 1,
+    "bounds_mm": [
+      24.0,
+      32.004,
+      29.0
+    ],
+    "volume_cm3": 2.017
+  },
+  "assembled": {
+    "watertight": true,
+    "positive_volume": true,
+    "surface_components": 1,
+    "bounds_mm": [
+      681.0,
+      384.0,
+      29.0
+    ],
+    "volume_cm3": 221.272
+  },
+  "design": {
+    "inner_lip_underside_z_mm": 1,
+    "inner_lip_top_z_mm": 3.4,
+    "peak_z_mm": 30,
+    "shell_z_thickness_mm": 2.4,
+    "joint_min_inner_edge_clearance_mm": 7,
+    "key_size_mm": [
+      27.6,
+      9.6,
+      1
+    ],
+    "key_seated_z_mm": [
+      10.1,
+      11.1
+    ],
+    "key_to_factory_face_min_z_gap_mm": 3.1,
+    "factory_face_z_mm": 7,
+    "post_contact_z_mm": 7.2,
+    "adhesive_allowance_mm": 0.2,
+    "post_count": 12,
+    "posts": [
+      {
+        "center_xy_mm": [
+          -210.0,
+          -176.5
+        ],
+        "foot_mm": [
+          8,
+          8
+        ],
+        "contact_z_mm": 7.2,
+        "foot_inside_factory_face": true
+      },
+      {
+        "center_xy_mm": [
+          -70.0,
+          -176.5
+        ],
+        "foot_mm": [
+          8,
+          8
+        ],
+        "contact_z_mm": 7.2,
+        "foot_inside_factory_face": true
+      },
+      {
+        "center_xy_mm": [
+          70.0,
+          -176.5
+        ],
+        "foot_mm": [
+          8,
+          8
+        ],
+        "contact_z_mm": 7.2,
+        "foot_inside_factory_face": true
+      },
+      {
+        "center_xy_mm": [
+          210.0,
+          -176.5
+        ],
+        "foot_mm": [
+          8,
+          8
+        ],
+        "contact_z_mm": 7.2,
+        "foot_inside_factory_face": true
+      },
+      {
+        "center_xy_mm": [
+          -210.0,
+          176.5
+        ],
+        "foot_mm": [
+          8,
+          8
+        ],
+        "contact_z_mm": 7.2,
+        "foot_inside_factory_face": true
+      },
+      {
+        "center_xy_mm": [
+          -70.0,
+          176.5
+        ],
+        "foot_mm": [
+          8,
+          8
+        ],
+        "contact_z_mm": 7.2,
+        "foot_inside_factory_face": true
+      },
+      {
+        "center_xy_mm": [
+          70.0,
+          176.5
+        ],
+        "foot_mm": [
+          8,
+          8
+        ],
+        "contact_z_mm": 7.2,
+        "foot_inside_factory_face": true
+      },
+      {
+        "center_xy_mm": [
+          210.0,
+          176.5
+        ],
+        "foot_mm": [
+          8,
+          8
+        ],
+        "contact_z_mm": 7.2,
+        "foot_inside_factory_face": true
+      },
+      {
+        "center_xy_mm": [
+          -310.5,
+          -60.0
+        ],
+        "foot_mm": [
+          8,
+          8
+        ],
+        "contact_z_mm": 7.2,
+        "foot_inside_factory_face": true
+      },
+      {
+        "center_xy_mm": [
+          -310.5,
+          60.0
+        ],
+        "foot_mm": [
+          8,
+          8
+        ],
+        "contact_z_mm": 7.2,
+        "foot_inside_factory_face": true
+      },
+      {
+        "center_xy_mm": [
+          310.5,
+          -60.0
+        ],
+        "foot_mm": [
+          8,
+          8
+        ],
+        "contact_z_mm": 7.2,
+        "foot_inside_factory_face": true
+      },
+      {
+        "center_xy_mm": [
+          310.5,
+          60.0
+        ],
+        "foot_mm": [
+          8,
+          8
+        ],
+        "contact_z_mm": 7.2,
+        "foot_inside_factory_face": true
+      }
+    ],
+    "locator_count": 8,
+    "locators": [
+      {
+        "edge": "top",
+        "station_mm": -140.0,
+        "wall_clearance_mm": 0.3,
+        "tip_above_glass_mm": 3.0,
+        "width_mm": 8.0,
+        "radial_thickness_mm": 1.8,
+        "lead_in_mm": 0.6
+      },
+      {
+        "edge": "top",
+        "station_mm": 140.0,
+        "wall_clearance_mm": 0.3,
+        "tip_above_glass_mm": 3.0,
+        "width_mm": 8.0,
+        "radial_thickness_mm": 1.8,
+        "lead_in_mm": 0.6
+      },
+      {
+        "edge": "bottom",
+        "station_mm": -140.0,
+        "wall_clearance_mm": 0.3,
+        "tip_above_glass_mm": 3.0,
+        "width_mm": 8.0,
+        "radial_thickness_mm": 1.8,
+        "lead_in_mm": 0.6
+      },
+      {
+        "edge": "bottom",
+        "station_mm": 140.0,
+        "wall_clearance_mm": 0.3,
+        "tip_above_glass_mm": 3.0,
+        "width_mm": 8.0,
+        "radial_thickness_mm": 1.8,
+        "lead_in_mm": 0.6
+      },
+      {
+        "edge": "right",
+        "station_mm": -70.0,
+        "wall_clearance_mm": 0.3,
+        "tip_above_glass_mm": 3.0,
+        "width_mm": 8.0,
+        "radial_thickness_mm": 1.8,
+        "lead_in_mm": 0.6
+      },
+      {
+        "edge": "right",
+        "station_mm": 70.0,
+        "wall_clearance_mm": 0.3,
+        "tip_above_glass_mm": 3.0,
+        "width_mm": 8.0,
+        "radial_thickness_mm": 1.8,
+        "lead_in_mm": 0.6
+      },
+      {
+        "edge": "left",
+        "station_mm": -70.0,
+        "wall_clearance_mm": 0.3,
+        "tip_above_glass_mm": 3.0,
+        "width_mm": 8.0,
+        "radial_thickness_mm": 1.8,
+        "lead_in_mm": 0.6
+      },
+      {
+        "edge": "left",
+        "station_mm": 70.0,
+        "wall_clearance_mm": 0.3,
+        "tip_above_glass_mm": 3.0,
+        "width_mm": 8.0,
+        "radial_thickness_mm": 1.8,
+        "lead_in_mm": 0.6
+      }
+    ],
+    "display_intersection_mm3": 0.0,
+    "print_slicing_and_physical_fit_verified": false
+  }
+}
