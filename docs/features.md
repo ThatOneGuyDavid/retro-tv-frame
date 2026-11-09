@@ -4,7 +4,7 @@
 
 ## One uninterrupted curved face
 
-The inner edge follows a rounded superellipse inside the viewing rectangle. The underside is 1 mm above glass, and the top face is 3.4 mm high there. The surface rises continuously to an outer peak of 30 mm. It clears the 7 mm factory step without inserting a shelf into the visible curve. Shell separation is 2.4 mm in Z; this is not a uniform thickness normal to the curved surface.
+The inner edge follows a rounded superellipse inside the viewing rectangle. The underside is 1 mm above glass, and the top face is 3.4 mm high there. The surface rises continuously to an outer peak of 30 mm. It clears the 7 mm factory step without inserting a shelf into the visible curve. The main shell separation is 2.4 mm in Z; this is not a uniform thickness normal to the curved surface. The underside thickens near the inner rim to form a permanent flat printing land, 2.2 mm at the top/bottom and 2.7 mm at the sides. It sits at installed Z1 (print Z0), retaining the glass gap and visible curve. A short underside blend returns it to the original shell.
 
 The wooden opening overlaps the outer sculpted rim by nominal 0.5 mm per straight axis. The flange extends **outward only** and has its wood-contact face level with the peak. There is no inward ledge over the sculpted face and no deep perimeter skirt reaching the bed.
 

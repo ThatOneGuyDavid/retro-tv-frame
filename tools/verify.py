@@ -4,6 +4,7 @@ import hashlib
 import json
 import re
 import trimesh as tm
+import numpy as np
 
 ROOT=Path(__file__).resolve().parents[1]
 errors=[]
@@ -17,6 +18,9 @@ for folder in ['bezel','knobs','grille']:
 for name in ['bezel-left','bezel-right']:
     mesh=tm.load_mesh(ROOT/'design/bezel'/f'{name}.stl')
     if abs(mesh.bounds[0,2])>1e-5:errors.append(name+' is not on print Z0')
+    flat=np.all(np.isclose(mesh.triangles[:,:,2],0,atol=1e-6),axis=1)
+    if mesh.area_faces[flat].sum()<1000:errors.append(name+' has no substantial flat printing land')
+    if not np.all(mesh.face_normals[flat,2]<-.99):errors.append(name+' bed faces do not face down')
 assembly=json.loads((ROOT/'design/assembly/validation.json').read_text())
 if len(assembly['pair_checks'])!=210:errors.append('Expected 210 assembly pair checks')
 for pair,result in assembly['pair_checks'].items():

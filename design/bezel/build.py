@@ -11,7 +11,9 @@ from matplotlib.patches import Polygon,Rectangle,Circle
 OUT=Path(__file__).resolve().parent
 ROOT=OUT.parent
 N=512
-TS=np.linspace(0,1,97)
+LAND_T=.90
+BLEND_T=.85
+TS=np.unique(np.r_[np.linspace(0,1,97),BLEND_T,LAND_T])
 SHELL=2.4
 PEAK=30.
 
@@ -23,11 +25,19 @@ def contour(t):
     c[abs(c)<1e-12]=0;s[abs(s)<1e-12]=0
     return np.column_stack((w/2*np.sign(c)*abs(c)**(2/n),h/2*np.sign(s)*abs(s)**(2/n)))
 
-def rear(t,xy):
+def original_rear(t,xy):
     # Single analytic curve: no factory-clearance clamp or intermediate shelf.
     u=1-t
     curve=(np.sqrt(u+.025)-np.sqrt(.025))/(np.sqrt(1.025)-np.sqrt(.025))
     return np.full(len(xy),1+(PEAK-SHELL-1)*curve)
+
+def rear(t,xy):
+    # Permanent flat printing land, installed at Z1 above the glass.
+    # Keep the original visible face; add material only beneath its inner rim.
+    # Flat from t=.90 to 1 (2.2 mm top/bottom, 2.7 mm sides), with a short
+    # underside blend returning to the original shell by t=.85.
+    weight=np.clip((LAND_T-t)/(LAND_T-BLEND_T),0,1)
+    return 1+(original_rear(t,xy)-1)*weight
 
 def loft(loops):
     v=np.concatenate(loops);f=[]
@@ -44,7 +54,7 @@ front=[];back=[]
 for t in TS:
     xy=contour(t);z=rear(t,xy)
     back.append(np.column_stack((xy,z)))
-    front.append(np.column_stack((xy,z+SHELL)))
+    front.append(np.column_stack((xy,original_rear(t,xy)+SHELL)))
 shell=loft(front+back[::-1])
 
 def box(size,center):
@@ -160,12 +170,20 @@ for name,m in {**parts,'assembled':body}.items():
     filename={'left':'bezel-left','right':'bezel-right','assembled':'bezel-assembled'}.get(name,name)
     m.export(OUT/f'{filename}.stl')
     assert tm.load_mesh(OUT/f'{filename}.stl').is_watertight,name
+    if name in ['left','right']:
+        flat=np.all(np.isclose(m.triangles[:,:,2],0,atol=1e-6),axis=1)
+        bed_area=float(m.area_faces[flat].sum())
+        contact=tm.Trimesh(m.vertices,m.faces[flat],process=True)
+        assert bed_area>1000 and components(contact)==1,(name,bed_area)
+        assert np.all(m.face_normals[flat,2]<-.99),name
+        report[name+'_bed_contact']={'plane_z_mm':0,'flat_area_mm2':bed_area,
+            'connected_contact_regions':1,'land_top_bottom_mm':2.2,'land_sides_mm':2.7}
     report[name]={'watertight':True,'positive_volume':True,'surface_components':1,
                   'bounds_mm':m.extents.round(4).tolist(),'volume_cm3':round(m.volume/1000,3)}
 assert all(parts['left'].extents < [420,420,500])
 assert np.allclose(back[-1][:,2],1)
 report['design']={'inner_lip_underside_z_mm':1,'inner_lip_top_z_mm':3.4,'peak_z_mm':30,
-    'shell_z_thickness_mm':SHELL,'joint_min_inner_edge_clearance_mm':7,
+    'shell_z_thickness_mm':SHELL,'flat_land_top_bottom_mm':2.2,'flat_land_sides_mm':2.7,'flat_land_installed_z_mm':1.,'joint_min_inner_edge_clearance_mm':7,
     'key_size_mm':[27.6,9.6,1],'key_seated_z_mm':[10.1,11.1],
     'key_to_factory_face_min_z_gap_mm':3.1,'factory_face_z_mm':7,
     'post_contact_z_mm':7.2,'adhesive_allowance_mm':.2,'post_count':12,'posts':post_report,
@@ -191,7 +209,7 @@ ys=[];zr=[]
 for t in TS:
     xy=contour(t);i=N//4;ys.append(xy[i,1]);zr.append(rear(t,xy)[i])
 ax.plot(ys,zr,color='#79842d',lw=2,label='Underside')
-ax.plot(ys,np.array(zr)+SHELL,color='#79842d',lw=4,label='Visible face')
+ax.plot(ys,[original_rear(t,contour(t))[0]+SHELL for t in TS],color='#79842d',lw=4,label='Visible face')
 ym=np.array(ys);mask=(ym>=170)&(ym<=182)
 ax.fill_between(ym[mask],10,(np.array(zr)+SHELL)[mask],color='#79842d',alpha=.5,label='Local rear joint pad')
 ax.fill_between([168.275,202.275],[-12,-12],[7,7],color='#777',alpha=.6,label='Factory bezel')
@@ -201,6 +219,6 @@ ax.add_patch(Rectangle((185,27),7,3,facecolor='#9b9f56',label='Peak-level flange
 ax.annotate('1 mm air gap',xy=(163,1),xytext=(150,6),arrowprops={'arrowstyle':'->'},fontsize=10)
 ax.set(xlim=(150,205),ylim=(-2,35),xlabel='Distance above screen center (mm)',ylabel='Forward from glass (mm)',title='TOP-CENTER SECTION')
 ax.legend(fontsize=8,loc='upper left')
-fig.suptitle('GREEN BEZEL · UNDERSIDE ALIGNMENT TABS',fontsize=19,weight='bold')
+fig.suptitle('GREEN BEZEL · FLAT INNER PRINTING LAND',fontsize=19,weight='bold')
 fig.tight_layout(rect=(0,0,1,.94));fig.savefig(OUT/'bezel-fit-preview.png',dpi=150);plt.close(fig)
 print(json.dumps(report['design'],indent=2))

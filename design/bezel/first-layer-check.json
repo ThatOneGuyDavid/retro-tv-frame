@@ -1,0 +1,34 @@
+{
+  "slicer": "Anycubic Slicer Next 2.0.0.5",
+  "model": "bezel-left.stl",
+  "first_layer_height_mm": 0.2,
+  "brim_type": "outer_and_inner",
+  "brim_width_mm": 10,
+  "brim_object_gap_mm": 0,
+  "first_layer_extruding_segments": {
+    "Support": 8046,
+    "Brim": 7958,
+    "Inner wall": 424,
+    "Outer wall": 424,
+    "Gap infill": 204,
+    "Bottom surface": 1337
+  },
+  "supports_in_this_diagnostic": true,
+  "slice_result": {
+    "error_string": "Success.",
+    "export_time": 7,
+    "plate_index": 0,
+    "prepare_time": 0,
+    "return_code": 0,
+    "sliced_plates": [
+      {
+        "id": 1,
+        "sliced_time": 29,
+        "sliced_time_with_cache": 11,
+        "triangle_count": 107390,
+        "warning_message": ""
+      }
+    ]
+  },
+  "physical_print_verified": false
+}

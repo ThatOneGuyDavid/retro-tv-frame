@@ -23,6 +23,7 @@ Origin is the **center of the viewing surface**, with glass front **Z=0**, X rig
 | Green complete flange | 681 × 384 |
 | Printed half | 340.5 × 384 × 29, independently translated to print Z0 |
 | Green inner underside / visible top | Z1 / Z3.4 |
+| Flat inner printing land | 2.2 mm top/bottom; 2.7 mm sides; installed Z1 / print Z0 |
 | Peak / flange front | Z30 |
 | Flange rear | Z27 |
 | Nominal shell thickness in Z | 2.4 |

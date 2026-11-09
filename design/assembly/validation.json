@@ -1336,7 +1336,7 @@
     }
   },
   "source_sha256": {
-    "bezel/bezel-assembled.stl": "c283cd00823624ad4632dc67f02932dde7ba4b0a377e753e7d232ddfb1da591e",
+    "bezel/bezel-assembled.stl": "b037d3e0c1c369d2f463fe1b672df659bd323e469cd85e6da1bf9c22f29c681a",
     "grille/speaker-grille.stl": "4e3d562aca783d57dcba56b16d19c792a1dc52effc34021036935a829a7eb559",
     "knobs/dial-plate.stl": "44b593945ca94531ec0190027e35ab4d1cfe9be55d24c244b10fc742098d1ed8",
     "knobs/brass-trim.stl": "8cf50bab00d55615cf7eb150d8c48f35f2bb24b8caf1d421d7ca1db3cf4f8657",

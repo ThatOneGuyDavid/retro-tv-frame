@@ -1,4 +1,11 @@
 {
+  "left_bed_contact": {
+    "plane_z_mm": 0,
+    "flat_area_mm2": 3086.607584440033,
+    "connected_contact_regions": 1,
+    "land_top_bottom_mm": 2.2,
+    "land_sides_mm": 2.7
+  },
   "left": {
     "watertight": true,
     "positive_volume": true,
@@ -8,7 +15,14 @@
       384.0,
       29.0
     ],
-    "volume_cm3": 110.636
+    "volume_cm3": 126.144
+  },
+  "right_bed_contact": {
+    "plane_z_mm": 0,
+    "flat_area_mm2": 3086.60757723439,
+    "connected_contact_regions": 1,
+    "land_top_bottom_mm": 2.2,
+    "land_sides_mm": 2.7
   },
   "right": {
     "watertight": true,
@@ -19,7 +33,7 @@
       384.0,
       29.0
     ],
-    "volume_cm3": 110.636
+    "volume_cm3": 126.144
   },
   "joint-test-left": {
     "watertight": true,
@@ -28,9 +42,9 @@
     "bounds_mm": [
       20.0,
       24.0,
-      25.6636
+      29.0
     ],
-    "volume_cm3": 2.875
+    "volume_cm3": 3.064
   },
   "joint-test-right": {
     "watertight": true,
@@ -39,9 +53,9 @@
     "bounds_mm": [
       20.0,
       24.0,
-      25.6636
+      29.0
     ],
-    "volume_cm3": 2.875
+    "volume_cm3": 3.064
   },
   "joining-key": {
     "watertight": true,
@@ -63,7 +77,7 @@
       29.2492,
       29.0
     ],
-    "volume_cm3": 2.655
+    "volume_cm3": 2.932
   },
   "alignment-fit-test": {
     "watertight": true,
@@ -74,7 +88,7 @@
       32.004,
       29.0
     ],
-    "volume_cm3": 2.017
+    "volume_cm3": 2.368
   },
   "assembled": {
     "watertight": true,
@@ -85,13 +99,16 @@
       384.0,
       29.0
     ],
-    "volume_cm3": 221.272
+    "volume_cm3": 252.288
   },
   "design": {
     "inner_lip_underside_z_mm": 1,
     "inner_lip_top_z_mm": 3.4,
     "peak_z_mm": 30,
     "shell_z_thickness_mm": 2.4,
+    "flat_land_top_bottom_mm": 2.2,
+    "flat_land_sides_mm": 2.7,
+    "flat_land_installed_z_mm": 1.0,
     "joint_min_inner_edge_clearance_mm": 7,
     "key_size_mm": [
       27.6,

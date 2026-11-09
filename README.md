@@ -2,7 +2,7 @@
 
 **[Open the live interactive preview](https://thatoneguydavid.github.io/retro-tv-frame/design/assembly/assembly-viewer.html)** — rotate the assembly, explore the layer tree, and zoom in on the parts.
 
-**Work in progress — shared before final assembly.** The CAD design and fabrication files are available now; the green bezel parts are being printed and physical fit/assembly checks are still underway. Dimensions and instructions may change as the build progresses. The images below are CAD views, not finished-build photographs.
+**Work in progress — shared before final assembly.** The CAD design and fabrication files are available now; the inner rim now has a flat printing land following a failed print with the previous edge-only contact; the green bezel parts are being printed and physical fit/assembly checks are still underway. Dimensions and instructions may change as the build progresses. The images below are CAD views, not finished-build photographs.
 
 A modern flat display dressed as a 1960s–1970s television: sculpted olive-green surround, brass-finished controls, a perforated speaker grille, and a mitered wooden cabinet frame.
 
@@ -46,7 +46,7 @@ The printable parts, woodworking template, assembly model, and editable geometry
 | Wooden faceplate | 1 | [Letter PDF](design/faceplate/faceplate-letter-tiled.pdf), [full-size SVG](design/faceplate/faceplate-full-size.svg) |
 | Wooden frame | Four mitered rails | [Cut list](design/assembly/frame-cut-list.csv), [section drawing](design/assembly/frame-section.png) |
 
-STLs use **millimeters**. The bezel halves are mirror images; print one of each. Their inner edges are already at print **Z=0**. Files named `assembled` or `reference`, the frame STLs, and the GLB are inspection models rather than print layouts.
+STLs use **millimeters**. The bezel halves are mirror images; print one of each. Their inner rims have a flat printing land at **Z=0**, 2.2 mm wide at the top/bottom and 2.7 mm at the sides, blended into the underside. Files named `assembled` or `reference`, the frame STLs, and the GLB are inspection models rather than print layouts.
 
 Each bezel half is **340.5 × 384 × 29 mm**, before supports or brim. The design was laid out for a 420 mm-square printer bed. Check the complete sliced footprint, not just the model bounds.
 
