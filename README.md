@@ -1,5 +1,7 @@
 # Retro TV Frame
 
+**[Open the live interactive preview](https://thatoneguydavid.github.io/retro-tv-frame/design/assembly/assembly-viewer.html)** — rotate the assembly, explore the layer tree, and zoom in on the parts.
+
 **Work in progress — shared before final assembly.** The CAD design and fabrication files are available now; the green bezel parts are being printed and physical fit/assembly checks are still underway. Dimensions and instructions may change as the build progresses. The images below are CAD views, not finished-build photographs.
 
 A modern flat display dressed as a 1960s–1970s television: sculpted olive-green surround, brass-finished controls, a perforated speaker grille, and a mitered wooden cabinet frame.
@@ -26,7 +28,7 @@ The printable parts, woodworking template, assembly model, and editable geometry
 
 1. Compare your display with the [measurement table](docs/dimensions.md). These are fitted parts, not a universal clip-on shell.
 2. Read the [parts list and build guide](docs/build-guide.md), then print the small fit samples before the large halves.
-3. [Open the assembly viewer](design/assembly/assembly-viewer.html) in a local browser. GitHub displays HTML source; download the repository and open this file locally. Rotate it and hide components to inspect the mounting surfaces. All controls are in the left sidebar; use the zoom slider or mouse wheel, and Fit view to reset framing.
+3. [Open the live assembly viewer](https://thatoneguydavid.github.io/retro-tv-frame/design/assembly/assembly-viewer.html) in your browser. For offline use, download the repository and open [assembly-viewer.html](design/assembly/assembly-viewer.html) locally. Rotate it and hide components to inspect the mounting surfaces. All controls are in the left sidebar; use the zoom slider or mouse wheel, and Fit view to reset framing.
 
    The layer tree lets you toggle the whole assembly, green bezel/joints, right-hand section, controls, either complete knob, wooden frame, or individual pieces. Expand a group for its children; a mixed checkbox means only some are visible.
 4. Print the [faceplate-only PDF](design/faceplate/faceplate-letter-tiled.pdf) at **Actual Size / 100%**. Measure its scale marks before cutting wood.
