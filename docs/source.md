@@ -2,7 +2,7 @@
 
 ## One current snapshot
 
-The repository contains the current design and its editable source. The build scripts generate the parts directly from dimensional geometry. They use Python numerical mesh construction and Manifold boolean operations through trimesh, with matplotlib for diagrams and full-scale paper artwork.
+The repository contains the current design and its editable source. `design/bezel/` contains **bezel v8** (stable filenames), including the permanent flat inner printing land. The build scripts generate the parts directly from dimensional geometry. They use Python numerical mesh construction and Manifold boolean operations through trimesh, with matplotlib for diagrams and full-scale paper artwork.
 
 | Builder | Main responsibility |
 | --- | --- |
@@ -42,11 +42,15 @@ The clean faceplate PDF/SVG is the preferred cutting artifact. The assembly buil
 - Glue-foot footprints on the modeled factory frame and nominal Z7.2 contact plane.
 - Joint/key clearance from the inner opening and measured display.
 - All **210 static part-pair checks** across the full **21-component** assembly, using separated bounding boxes or solid-intersection volumes as appropriate.
-- Source-mesh fingerprints, including the unchanged bezel used by the frame model.
+- Source-mesh fingerprints, including the current v8 bezel used by the frame model.
 - True-scale Letter page setup and full tile coverage. The clean template contains three closed cut contours and no other-layer outlines.
 - Local links, file inventory, and checksums in the prepared package.
 
 `validation.json` files live with their builders. They are machine-check evidence, not proof of physical strength or a record of completed construction. Numerical fit depends on the reference envelope; actual printers, adhesive, material thickness, finish buildup, stands, speaker acoustics and ventilation need workshop checks. The repository does not claim a finished electronics integration or measured structural load capacity.
+
+## Physical test status
+
+The bezel v8 test print was reported successful on **2026-11-10**. This is a reported physical result, separate from the numerical checks and the earlier slice evidence in `design/bezel/first-layer-check.json`. That JSON remains a record of its diagnostic slice, not a record of the later physical test. The exact successful print settings have not been recorded. Display fit, adhesive joints, woodworking and final assembly remain to be checked.
 
 ## Contributing an adaptation
 

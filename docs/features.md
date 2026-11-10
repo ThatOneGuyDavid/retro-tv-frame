@@ -1,5 +1,7 @@
 # How the fitting features work
 
+Current green geometry: **bezel v8**, with a successful test print reported on 2026-11-10. Display fit and assembly validation remain separate workshop checks.
+
 ![Underside plan and section](../design/bezel/bezel-fit-preview.png)
 
 ## One uninterrupted curved face

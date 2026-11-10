@@ -2,7 +2,7 @@
 
 **[Open the live interactive preview](https://thatoneguydavid.github.io/retro-tv-frame/design/assembly/assembly-viewer.html)** — rotate the assembly, explore the layer tree, and zoom in on the parts.
 
-**Work in progress — shared before final assembly.** The CAD design and fabrication files are available now; the inner rim now has a flat printing land following a failed print with the previous edge-only contact; the green bezel parts are being printed and physical fit/assembly checks are still underway. Dimensions and instructions may change as the build progresses. The images below are CAD views, not finished-build photographs.
+**Work in progress — shared before final assembly.** The current printable bezel is **v8**, with a flat inner printing land. Its test print was reported successful on **2026-11-10**. Display fit, bonding, woodworking and final assembly checks are still underway. Dimensions and instructions may change as the build progresses. The images below are CAD views, not finished-build photographs.
 
 A modern flat display dressed as a 1960s–1970s television: sculpted olive-green surround, brass-finished controls, a perforated speaker grille, and a mitered wooden cabinet frame.
 
@@ -38,13 +38,15 @@ The printable parts, woodworking template, assembly model, and editable geometry
 
 | Item | Quantity | Files |
 | --- | ---: | --- |
-| Green bezel | One left, one right | [Left](design/bezel/bezel-left.stl), [right](design/bezel/bezel-right.stl) |
+| Green bezel v8 | One left, one right | [Left](design/bezel/bezel-left.stl), [right](design/bezel/bezel-right.stl) |
 | Rear joining keys | 2 | [Key](design/bezel/joining-key.stl) |
 | Knobs | Two sets of five parts | [Knob parts](docs/build-guide.md#knobs) |
 | Knob mounting plate | 1 | [Plate](design/assembly/knob-mounting-plate.stl) |
 | Speaker grille | 1 | [Grille](design/grille/speaker-grille.stl) |
 | Wooden faceplate | 1 | [Letter PDF](design/faceplate/faceplate-letter-tiled.pdf), [full-size SVG](design/faceplate/faceplate-full-size.svg) |
 | Wooden frame | Four mitered rails | [Cut list](design/assembly/frame-cut-list.csv), [section drawing](design/assembly/frame-section.png) |
+
+The files in `design/bezel/` are the current **bezel v8** geometry; filenames stay stable so links remain useful. Use these files rather than any older local bezel exports.
 
 STLs use **millimeters**. The bezel halves are mirror images; print one of each. Their inner rims have a flat printing land at **Z=0**, 2.2 mm wide at the top/bottom and 2.7 mm at the sides, blended into the underside. Files named `assembled` or `reference`, the frame STLs, and the GLB are inspection models rather than print layouts.
 

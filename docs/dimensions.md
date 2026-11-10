@@ -1,5 +1,7 @@
 # Example dimensions and coordinate system
 
+These dimensions describe the current **bezel v8** and matching assembly. The v8 test print was successful; installation fit remains to be checked.
+
 All dimensions are millimeters unless labeled otherwise. These measurements describe a **generic square-edged reference envelope**, not a named display model. The glass and housing are modeled as one solid unit; no internal display construction is inferred.
 
 ## Display

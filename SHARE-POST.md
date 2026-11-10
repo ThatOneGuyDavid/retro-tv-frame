@@ -2,7 +2,7 @@
 
 I wanted the warmth and chunky controls of an old television around a modern flat screen, so I designed a printed-and-wooden frame with an olive-green sculpted surround, brass-finished knobs, and a perforated speaker grille.
 
-I’m sharing this before final assembly so others can explore or adapt it. The bezel parts are being printed, and physical fit and assembly checks are still underway. The illustrations are CAD views, not completed-build photographs.
+I’m sharing this before final assembly so others can explore or adapt it. The current bezel is v8, with a flat inner printing land; its test print was successful on 2026-11-10. Display fit and final assembly checks are still underway. The illustrations are CAD views, not completed-build photographs.
 
 The design combines a few useful fabrication ideas: a two-piece bezel with hidden joining keys, glue feet that set the glass clearance, tapered tabs that locate against the factory frame, separately paintable knob parts, and a thin faceplate captured in a grooved mitered wood frame.
 
