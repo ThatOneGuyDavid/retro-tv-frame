@@ -1,0 +1,120 @@
+{
+  "method": "Curved B-rep reconstruction from v8 equations; original STLs unchanged",
+  "units": "mm",
+  "parts": {
+    "bezel-assembled": {
+      "valid": true,
+      "solids": 1,
+      "faces": 179,
+      "volume_mm3": 252241.1214794428,
+      "pre_export_volume_mm3": 252241.10080452915,
+      "bounds_mm": [
+        [
+          -340.6315642720712,
+          -192.1419762840118,
+          0.9999999
+        ],
+        [
+          340.631564271725,
+          192.14197628412603,
+          30.000000100045888
+        ]
+      ],
+      "relative_volume_difference_from_stl": 0.00018561936099250844,
+      "max_bounds_difference_from_stl_mm": 0.1407241100174872,
+      "surface_comparison": {
+        "samples_each_direction": 12000,
+        "seed": 12345,
+        "tessellation_absolute_linear_tolerance_mm": 0.005,
+        "max_sampled_distance_mm": 0.14136116165170817,
+        "p99_sampled_distance_mm": 0.0558774997130638
+      }
+    },
+    "joining-key": {
+      "valid": true,
+      "solids": 1,
+      "faces": 6,
+      "volume_mm3": 264.96000000000004,
+      "pre_export_volume_mm3": 264.96000000000004,
+      "bounds_mm": [
+        [
+          -13.8,
+          -4.8,
+          0.0
+        ],
+        [
+          13.8,
+          4.8,
+          1.0
+        ]
+      ],
+      "relative_volume_difference_from_stl": 5.3557794298170165e-08,
+      "max_bounds_difference_from_stl_mm": 1.9073486345888568e-07,
+      "surface_comparison": {
+        "samples_each_direction": 12000,
+        "seed": 12345,
+        "tessellation_absolute_linear_tolerance_mm": 0.005,
+        "max_sampled_distance_mm": 1.9073486346052668e-07,
+        "p99_sampled_distance_mm": 1.9073486345895908e-07
+      }
+    },
+    "bezel-left": {
+      "valid": true,
+      "solids": 1,
+      "faces": 99,
+      "volume_mm3": 126190.10710435969,
+      "pre_export_volume_mm3": 126190.09923782211,
+      "bounds_mm": [
+        [
+          -0.13156437210020638,
+          -0.14197638409980246,
+          -1.0000000005551911e-07
+        ],
+        [
+          340.5000000000016,
+          384.1419761840361,
+          29.000000100045888
+        ]
+      ],
+      "relative_volume_difference_from_stl": 0.00036567699444339823,
+      "max_bounds_difference_from_stl_mm": 0.14072420999433044,
+      "surface_comparison": {
+        "samples_each_direction": 12000,
+        "seed": 12345,
+        "tessellation_absolute_linear_tolerance_mm": 0.005,
+        "max_sampled_distance_mm": 0.14143461487173767,
+        "p99_sampled_distance_mm": 0.05147426868166271
+      }
+    },
+    "bezel-right": {
+      "valid": true,
+      "solids": 1,
+      "faces": 99,
+      "volume_mm3": 126191.12702030965,
+      "pre_export_volume_mm3": 126191.11983249534,
+      "bounds_mm": [
+        [
+          -9.999997157829057e-08,
+          -0.14197638410019747,
+          -1.0000000005551911e-07
+        ],
+        [
+          340.631564271725,
+          384.1419761835682,
+          29.00000010003656
+        ]
+      ],
+      "relative_volume_difference_from_stl": 0.00037377036571953457,
+      "max_bounds_difference_from_stl_mm": 0.1407242099972438,
+      "surface_comparison": {
+        "samples_each_direction": 12000,
+        "seed": 12345,
+        "tessellation_absolute_linear_tolerance_mm": 0.005,
+        "max_sampled_distance_mm": 0.14134550518048306,
+        "p99_sampled_distance_mm": 0.053716262695148766
+      }
+    }
+  },
+  "bounds_note": "CAD spline bounding boxes can be conservative; print halves use nominal STL datum. Tessellated bounds comparison follows.",
+  "comparison_note": "Sampled comparison, not an exhaustive maximum-deviation proof. STEP is a smooth reconstruction, not an exact mesh conversion."
+}

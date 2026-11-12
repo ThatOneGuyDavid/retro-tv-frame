@@ -62,6 +62,8 @@ See [build-guide.md](docs/build-guide.md) for assembly and finishing, [features.
 
 ## Editable source
 
+The green bezel is also supplied as [editable STEP solids](design/bezel/STEP.md): [full bezel](design/bezel/bezel-assembled.step), [left half](design/bezel/bezel-left.step), [right half](design/bezel/bezel-right.step), and [joining key](design/bezel/joining-key.step). These are curved B-rep reconstructions of v8. STEP contains solid geometry; the accompanying CAD builder supplies editable equations rather than a native feature tree. Existing print STLs remain the print reference.
+
 Python scripts generate the meshes, fit checks, diagrams, offline viewer, cut list, and templates.
 
 ```bash

@@ -55,3 +55,7 @@ The bezel v8 test print was reported successful on **2026-11-10**. This is a rep
 ## Contributing an adaptation
 
 Share the measurements needed to reproduce the geometry, anonymous if preferred. Include a clear front/section view, fitting sample results, exact part files, and a description of any unmodeled features. Do not call an adaptation universal merely because it scales visually. Keep current build instructions synchronized with geometry and actual hardware decisions.
+
+## Green bezel STEP
+
+[STEP files and CAD instructions](../design/bezel/STEP.md) provide curved B-rep solids for the full green bezel, both halves and joining key. The optional `design/bezel/build_step.py` runs separately from the mesh build and never overwrites STLs. Install `design/bezel/requirements-step.txt` in a separate environment, run the builder, then `design/bezel/verify_step.py`. The latter checks the reconstructed surfaces against the supplied STLs; results are in `design/bezel/step-validation.json`. STEP imports as solid geometry without a native CAD feature tree.
