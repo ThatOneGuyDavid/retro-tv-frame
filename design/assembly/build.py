@@ -343,7 +343,10 @@ for outline in rail_shapes.values():
     ax.add_patch(Polygon(outline,facecolor='#754823',edgecolor='#563619',lw=.7))
 ax.set(xlim=(OL-12,OR+12),ylim=(OB-12,OT+12))
 fig.text(.08,.07,'Mitered 3/4 × 3 inch frame · 1/4 inch groove · 2 mm housing clearance · sculpted printable surround',fontsize=11)
-fig.tight_layout(rect=(0,.1,1,.94));fig.savefig(OUT/'assembly-front.png',dpi=160);plt.close(fig)
+fig.tight_layout(rect=(0,.1,1,.94))
+fig.savefig(OUT/'assembly-front.png',dpi=160)
+fig.savefig(OUT/'assembly-front-15mm.png',dpi=160)
+plt.close(fig)
 
 fig,ax=plt.subplots(figsize=(14,7),facecolor='#f3efe5')
 drawing(ax,False)

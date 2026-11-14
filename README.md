@@ -6,7 +6,7 @@
 
 A modern flat display dressed as a 1960s–1970s television: sculpted olive-green surround, brass-finished controls, a perforated speaker grille, and a mitered wooden cabinet frame.
 
-![Current CAD assembly](design/assembly/assembly-front.png)
+![Current CAD assembly with 15 mm control-side margin](design/assembly/assembly-front-15mm.png)
 
 *CAD illustration of the supplied design, not a photograph of a completed build.*
 
