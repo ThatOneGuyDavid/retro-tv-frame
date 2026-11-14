@@ -65,11 +65,13 @@ The removable hub joins the grip with two provisional 3 mm self-tapping fastener
 
 Use the **[clean Letter PDF](../design/faceplate/faceplate-letter-tiled.pdf)**. It contains one calibration page plus ten tiles, 5 across × 2 down. Paper is 8.5 × 11 inch portrait with 1/2 inch margins and 10 mm overlaps.
 
+The same revised faceplate outline is also supplied as a [one-sheet A1 PDF and eight interlocking 3.175 mm print sections](../design/faceplate-a1-and-eight/README.md), plus [seven interlocking 1.25 mm print sections](../design/faceplate-seven/README.md). The eight sections are packed into two verified 420 × 420 mm plate files; the seven sections fit individually on that bed. The A1 sheet retains one unbroken outer outline. Print at 100% and measure its scale checks. Dovetail fit and actual printer scale remain untested.
+
 1. Print the first page at **Actual Size / 100%**, with Fit/Shrink disabled.
 2. Measure the 100 mm bar and 1 inch square in both axes.
 3. Print the ten tiles with the same settings. Arrange R1 C1–C5 above R2 C1–C5.
 4. Trim one shared margin, overlap the drawings, and match labeled crosses and contour lines rather than paper edges alone.
-5. Apply to the wood's front, TOP up. Cut the **803.2 × 434.75 mm** outer boundary, curved **640 × 369 mm** screen opening, and **100 × 160 mm R8** speaker opening. Alignment crosses/dotted overlap guides are not cuts.
+5. Apply to the wood's front, TOP up. Cut the **816.2 × 434.75 mm** outer boundary, curved **640 × 369 mm** screen opening, and **100 × 160 mm R8** speaker opening. Alignment crosses/dotted overlap guides are not cuts.
 6. Dry-fit prints and paper against the actual display before cutting final material. The screen opening is a curved contour, not the 640 × 369 bounding rectangle.
 
 The panel extends 6.1 mm into each 6.35 mm groove, leaving 0.25 mm to each groove bottom. It is larger than the visible opening, not the frame's outside size. Do not trim it down to the frame opening.
@@ -82,14 +84,14 @@ Use the [CSV cut list](../design/assembly/frame-cut-list.csv). Dimensions assume
 
 | Rails | Quantity | Long point to long point | Short point to short point |
 | --- | ---: | ---: | ---: |
-| Top and bottom | 2 | 829.1 mm | 791 mm |
+| Top and bottom | 2 | 842.1 mm | 804 mm |
 | Left and right | 2 | 460.65 mm | 422.55 mm |
 
-Both ends have 45° miters. The 19.05 mm dimension is the visible front border width; 76.2 mm extends rearward. The model gives an inside opening of 791 × 422.55 mm and outside size 829.1 × 460.65 mm.
+Both ends have 45° miters. The 19.05 mm dimension is the visible front border width; 76.2 mm extends rearward. The model gives an inside opening of 804 × 422.55 mm and outside size 842.1 × 460.65 mm.
 
 Route the inward-facing groove **6.35 mm deep**. The example's width is **3.575 mm** for a 3.175 mm panel. Its front/back edges are **2.8 / 6.375 mm behind the front rail face**, placing the faceplate front 3 mm behind the rail front. This groove location is a design choice: test the 2.8 mm front lip and actual panel fit on scrap before routing full rails. Set groove width from actual material, not only a labeled nominal thickness.
 
-The frame leaves 2 mm around the display at top/bottom. The left display clearance is 11.05 mm because the unchanged green flange must also fit; that flange has 2 mm rail clearance. The right rail clears the control plate by 2 mm. Miter glue-up, reinforcement, cutting allowances and finish are woodworking decisions, not a supplied structural proof.
+The frame leaves 2 mm around the display at top/bottom. The left display clearance is 11.05 mm because the unchanged green flange must also fit; that flange has 2 mm rail clearance. The right rail clears the control plate by 15 mm. Miter glue-up, reinforcement, cutting allowances and finish are woodworking decisions, not a supplied structural proof.
 
 Dry-assemble the rails around the panel. A rigid panel is captured by the grooves; do not assume it can be inserted into an already closed frame. Consider assembly order before permanent bonds to the monitor. The rails reach 2.825 mm behind the modeled housing rear, but the actual stand, ports, vents, cables and their access are not modeled. Keep them accessible and unobstructed.
 

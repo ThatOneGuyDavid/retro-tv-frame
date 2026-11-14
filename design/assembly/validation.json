@@ -2,7 +2,7 @@
   "wood_thickness_mm": 3.175,
   "glue_allowance_mm": 0.2,
   "faceplate_size_mm": [
-    803.2,
+    816.2,
     434.75
   ],
   "frame": {
@@ -16,11 +16,11 @@
     "inside_bounds_xy_mm": [
       -342.5,
       -218.275,
-      448.5,
+      461.5,
       204.275
     ],
     "outside_size_mm": [
-      829.1,
+      842.1,
       460.65000000000003
     ],
     "front_z_mm": 36.375,
@@ -38,7 +38,7 @@
     "grille_to_wood_glue_gap_mm": 0.2,
     "knob_plate_to_wood_glue_gap_mm": 0.2,
     "knob_plate_to_bezel_z_mm": 3.575000000000003,
-    "trim_to_knob_plate_right_mm": 2.0,
+    "trim_to_knob_plate_right_mm": 15.0,
     "trim_to_bezel_top_bottom_mm": 19.275000000000006,
     "trim_to_bezel_left_mm": 22.0,
     "wood_edge_to_grille_bottom_mm": 26.375
@@ -180,7 +180,7 @@
           30.2
         ],
         [
-          454.6,
+          467.6,
           210.375,
           33.375
         ]
@@ -244,7 +244,7 @@
           -39.825
         ],
         [
-          467.55,
+          480.55,
           223.325,
           36.375
         ]
@@ -260,7 +260,7 @@
           -39.825
         ],
         [
-          467.55,
+          480.55,
           -218.275,
           36.375
         ]
@@ -287,12 +287,12 @@
     "wood-frame-right": {
       "bounds_mm": [
         [
-          448.5,
+          461.5,
           -237.325,
           -39.825
         ],
         [
-          467.55,
+          480.55,
           223.325,
           36.375
         ]

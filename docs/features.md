@@ -36,4 +36,4 @@ The grille's 240 Ø4.8 mm holes have 2.2 mm webs on a 7 mm pitch. Its 27.2% visi
 
 ## Captured wooden faceplate
 
-The four rearward-extending rails carry a 6.35 mm-deep groove. The panel engages 6.1 mm, leaving 0.25 mm per edge at groove bottoms. The 803.2 × 434.75 mm panel is intentionally larger than the frame's 791 × 422.55 mm visible opening. Clearances are checked around both the display and hidden plastic; sizing only to the visible glass would make the rearward rails collide with the housing or flange.
+The four rearward-extending rails carry a 6.35 mm-deep groove. The panel engages 6.1 mm, leaving 0.25 mm per edge at groove bottoms. The 816.2 × 434.75 mm panel is intentionally larger than the frame's 804 × 422.55 mm visible opening. The right rail is 15 mm from the control plate; the left rail remains 22 mm from the visible green bezel. Clearances are checked around both the display and hidden plastic; sizing only to the visible glass would make the rearward rails collide with the housing or flange.

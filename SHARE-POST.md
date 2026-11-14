@@ -6,7 +6,7 @@ I’m sharing this before final assembly so others can explore or adapt it. The 
 
 The design combines a few useful fabrication ideas: a two-piece bezel with hidden joining keys, glue feet that set the glass clearance, tapered tabs that locate against the factory frame, separately paintable knob parts, and a thin faceplate captured in a grooved mitered wood frame.
 
-The repository includes the current printable parts, editable source, a browser assembly viewer, woodworking dimensions and cut list, and a faceplate-only template for ordinary Letter paper. It also explains the fitting features and how to adapt the design to a different display, including measurement worksheets and CAD-assistant prompt suggestions.
+The repository includes the current printable parts, editable source, a browser assembly viewer, woodworking dimensions and cut list, and three faceplate pattern methods: ordinary Letter paper, one-sheet A1 with an eight-piece printable layout, and a seven-piece printable layout. It also explains the fitting features and how to adapt the design to a different display, including measurement worksheets and CAD-assistant prompt suggestions.
 
 It is specified by measurements rather than a named monitor. The files describe the decorative front and frame; speaker mounting, control electronics and the final structural support can be chosen for your build.
 

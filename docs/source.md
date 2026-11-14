@@ -12,6 +12,8 @@ The repository contains the current design and its editable source. `design/beze
 | `design/bezel/build.py` | Curve, lips, flange, joints, feet, locators, samples |
 | `design/assembly/build.py` | Positions, wood/rails/grooves, pair checks, viewer, cut list |
 | `design/faceplate/build.py` | Clean woodworking SVG/PDF and registration marks |
+| `design/faceplate-a1-and-eight/build.py` | One-sheet A1 PDF, eight interlocking sections and two plate layouts |
+| `design/faceplate-seven/build.py` | Seven 1.25 mm interlocking sections |
 
 The files are coordinated example geometry, not a universal resizer. Glass half-width/height, post and locator stations, joint positions, assembly column positions, outline/cutout dimensions, and template labels all need attention during adaptation. Some assertions encode example-specific targets; update them to test the new design rather than removing them to hide a failure.
 
@@ -26,7 +28,7 @@ python tools/verify.py
 
 If Node.js is available, `node tools/check-viewer.cjs` exercises the actual viewer's tree membership, grouped visibility, sibling isolation, and mixed checkbox states. It also checks the zoom slider/readout, mouse-wheel limits and synchronization, and Fit reset. These are control-logic checks with a minimal DOM, not a claim of WebGL/browser rendering coverage.
 
-Build order is display → knobs → grille → bezel → assembly → clean faceplate. A display reference is included so individual builders can be inspected, but the full build starts from source. The assembly builder also writes its own consistent one-piece display reference. The clean template reads the assembly's verified wood bounds.
+Build order is display → knobs → grille → bezel → assembly → clean Letter faceplate → A1/eight-piece pattern → seven-piece pattern. A display reference is included so individual builders can be inspected, but the full build starts from source. The assembly builder also writes its own consistent one-piece display reference. The clean template reads the assembly's verified wood bounds. The two segmented builders use the same panel edge and openings; CadQuery is included for their solid booleans.
 
 All output is local. There are no model/API requests, private paths, device identities, or cloud dependencies in the builders. The offline WebGL viewer embeds the actual triangles and needs no external JavaScript library. The public diagrams show CAD geometry; none is labeled as a build photograph.
 

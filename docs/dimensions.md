@@ -49,13 +49,13 @@ The rounded green opening overlaps the straight glass rectangle by approximately
 
 | Feature | Value |
 | --- | --- |
-| Panel width × height | 803.2 × 434.75 |
+| Panel width × height | 816.2 × 434.75 |
 | Panel thickness | 3.175 |
-| Panel X bounds | -348.6..454.6 |
+| Panel X bounds | -348.6..467.6 |
 | Panel Y bounds | -224.375..210.375 |
-| Rail inside X bounds | -342.5..448.5 |
+| Rail inside X bounds | -342.5..461.5 |
 | Rail inside Y bounds | -218.275..204.275 |
-| Frame outside width × height | 829.1 × 460.65 |
+| Frame outside width × height | 842.1 × 460.65 |
 | Rail cross-section | 19.05 front width × 76.2 rearward depth |
 | Frame front / rear | Z36.375 / Z-39.825 |
 | Groove depth / width | 6.35 / 3.575 |
@@ -63,5 +63,7 @@ The rounded green opening overlaps the straight glass rectangle by approximately
 | Panel front setback from rail front | 3 |
 | Screen wood opening | 640 × 369 curved contour |
 | Speaker wood opening | 100 × 160, R8 |
+| Control plate to right frame opening | 15 |
+| Green bezel to left frame opening | 22 |
 
 Faceplate drawing is front view, TOP up. Match the actual curved screen contour; dimensions alone do not reproduce its corners. Shaft holes are not in the clean woodworking template because the hardware-specific openings have not been selected.

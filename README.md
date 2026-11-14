@@ -22,7 +22,7 @@ The printable parts, woodworking template, assembly model, and editable geometry
 - **Paintable modular knobs:** each control has a black dial, separate brass trim, fluted grip, paint-filled index cap, and removable hub. The hub is left blank so the visible knob does not dictate the eventual shaft hardware.
 - **Single-piece grille:** circular perforations, a solid border, and top/bottom mounting bands keep the control column compact.
 - **Real woodworking geometry:** four mitered 3/4 × 3 inch rails capture the thin faceplate in a 1/4-inch-deep groove, with clearance around the display and the printed parts.
-- **Ordinary paper template:** ten US Letter tiles, alignment crosses, overlapping edges, and a ruler-check page. The template shows only the faceplate and its cutouts.
+- **Three faceplate pattern methods:** a ten-tile US Letter paper template, a one-sheet A1 PDF with an eight-piece printable pattern, and a seven-piece printable pattern. All share the revised outer edge and original openings.
 
 ## Start here
 
@@ -32,6 +32,7 @@ The printable parts, woodworking template, assembly model, and editable geometry
 
    The layer tree lets you toggle the whole assembly, green bezel/joints, right-hand section, controls, either complete knob, wooden frame, or individual pieces. Expand a group for its children; a mixed checkbox means only some are visible.
 4. Print the [faceplate-only PDF](design/faceplate/faceplate-letter-tiled.pdf) at **Actual Size / 100%**. Measure its scale marks before cutting wood.
+   For other pattern methods, see the [A1 sheet and eight-piece layout](design/faceplate-a1-and-eight/README.md) or [seven-piece layout](design/faceplate-seven/README.md).
 5. For another display, follow [adaptation and prompt suggestions](docs/adapting.md).
 
 ## Files to make the supplied design
@@ -43,7 +44,7 @@ The printable parts, woodworking template, assembly model, and editable geometry
 | Knobs | Two sets of five parts | [Knob parts](docs/build-guide.md#knobs) |
 | Knob mounting plate | 1 | [Plate](design/assembly/knob-mounting-plate.stl) |
 | Speaker grille | 1 | [Grille](design/grille/speaker-grille.stl) |
-| Wooden faceplate | 1 | [Letter PDF](design/faceplate/faceplate-letter-tiled.pdf), [full-size SVG](design/faceplate/faceplate-full-size.svg) |
+| Wooden faceplate | 1 | [Letter PDF](design/faceplate/faceplate-letter-tiled.pdf), [full-size SVG](design/faceplate/faceplate-full-size.svg), [A1 PDF and eight-piece pattern](design/faceplate-a1-and-eight/README.md), [seven-piece pattern](design/faceplate-seven/README.md) |
 | Wooden frame | Four mitered rails | [Cut list](design/assembly/frame-cut-list.csv), [section drawing](design/assembly/frame-section.png) |
 
 The files in `design/bezel/` are the current **bezel v8** geometry; filenames stay stable so links remain useful. Use these files rather than any older local bezel exports.
@@ -54,7 +55,7 @@ Each bezel half is **340.5 × 384 × 29 mm**, before supports or brim. The desig
 
 ## Size and scope
 
-The reference display has a **596.9 × 336.55 mm** viewing area, a **662.9 × 418.55 × 44 mm** square-edged body, and a viewing surface recessed **7 mm** from its factory bezel. The faceplate is **803.2 × 434.75 mm**; the wooden frame is **829.1 × 460.65 mm** outside.
+The reference display has a **596.9 × 336.55 mm** viewing area, a **662.9 × 418.55 × 44 mm** square-edged body, and a viewing surface recessed **7 mm** from its factory bezel. The faceplate is **816.2 × 434.75 mm**; the wooden frame is **842.1 × 460.65 mm** outside.
 
 The project supplies the decorative front, fit features, frame geometry, and fabrication files. The reference display is one intact unit. Its original stand can remain in use, but its actual stand, ports, ventilation, and a structural attachment for the added frame are not designed here. The grille is not a speaker enclosure or speaker mount. The knobs accept future custom shaft adapters; there is no included electronics or rotary-control integration.
 

@@ -86,7 +86,7 @@ with PdfPages(OUT/'faceplate-letter-tiled.pdf', metadata={'CreationDate':None,'M
         'SOLID black lines: outer wood boundary and cutouts.\n'
         'Fine crosses and dotted lines are tile alignment guides.\n'
         'Only the faceplate boundary and cutouts are shown.\n\n'
-        'Panel: 803.2 × 434.75 mm; screen opening: 640 × 369 mm.\n'
+        'Panel: 816.2 × 434.75 mm; screen opening: 640 × 369 mm.\n'
         'Screen contour is curved, NOT a bounding rectangle.\n'
         'Grille opening: 100 × 160 mm, corner radius 8 mm.\n'
         'View is FRONT / TOP UP. Attach template to wood front.\n\n'
@@ -125,7 +125,7 @@ with PdfPages(OUT/'faceplate-letter-tiled.pdf', metadata={'CreationDate':None,'M
 
 
 
-assert np.isclose(WIDTH,803.2,atol=.0001) and np.isclose(HEIGHT,434.75,atol=.0001)
+assert np.isclose(WIDTH,816.2,atol=.0001) and np.isclose(HEIGHT,434.75,atol=.0001)
 assert np.isclose(TW/7.5,25.4) and np.isclose(TH/10,25.4)
 assert LEFT+(COLS-1)*SX+TW>=RIGHT and TOP-(ROWS-1)*SY-TH<=BOTTOM
 fig,ax=plt.subplots(figsize=(13,8))

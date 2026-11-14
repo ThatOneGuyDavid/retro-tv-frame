@@ -1,0 +1,207 @@
+{
+  "source_geometry": "design/faceplate/build.py and design/assembly/build.py",
+  "screen_cutout_mm": [
+    640.0,
+    369.0
+  ],
+  "speaker_cutout_mm": [
+    100.0,
+    160.0
+  ],
+  "speaker_center_mm": [
+    392.5,
+    -102.0
+  ],
+  "knob_center_references_mm": [
+    [
+      392.5,
+      130.0
+    ],
+    [
+      392.5,
+      40.0
+    ]
+  ],
+  "pdf_page_mm": [
+    841.0,
+    594.0
+  ],
+  "pdf_pages": 1,
+  "faceplate_outer_mm": [
+    816.2,
+    434.75
+  ],
+  "printed_thickness_mm": 3.175,
+  "dovetail_neck_width_mm": 8.0,
+  "dovetail_head_width_mm": 14.0,
+  "dovetail_depth_mm": 9.0,
+  "socket_clearance_mm": 0.25,
+  "split_mm": {
+    "x": [
+      -320,
+      0,
+      320
+    ],
+    "center_y": 0
+  },
+  "parts": {
+    "left-top.stl": {
+      "size_mm": [
+        37.6,
+        219.375,
+        3.175
+      ],
+      "print_rotation_deg": 0,
+      "watertight": true,
+      "single_body": true
+    },
+    "left-bottom.stl": {
+      "size_mm": [
+        28.6,
+        224.375,
+        3.175
+      ],
+      "print_rotation_deg": 0,
+      "watertight": true,
+      "single_body": true
+    },
+    "top-left.stl": {
+      "size_mm": [
+        329.0,
+        210.375,
+        3.175
+      ],
+      "print_rotation_deg": 0,
+      "watertight": true,
+      "single_body": true
+    },
+    "top-right.stl": {
+      "size_mm": [
+        329.0,
+        210.375,
+        3.175
+      ],
+      "print_rotation_deg": 0,
+      "watertight": true,
+      "single_body": true
+    },
+    "bottom-left.stl": {
+      "size_mm": [
+        329.0,
+        224.375,
+        3.175
+      ],
+      "print_rotation_deg": 0,
+      "watertight": true,
+      "single_body": true
+    },
+    "bottom-right.stl": {
+      "size_mm": [
+        329.0,
+        224.375,
+        3.175
+      ],
+      "print_rotation_deg": 0,
+      "watertight": true,
+      "single_body": true
+    },
+    "controls-top.stl": {
+      "size_mm": [
+        147.6,
+        210.375,
+        3.175
+      ],
+      "print_rotation_deg": 0,
+      "watertight": true,
+      "single_body": true
+    },
+    "controls-speaker.stl": {
+      "size_mm": [
+        156.6,
+        233.375,
+        3.175
+      ],
+      "print_rotation_deg": 0,
+      "watertight": true,
+      "single_body": true
+    }
+  },
+  "build_plates": {
+    "plate-1-outer-sections.stl": {
+      "body_count": 4,
+      "placements": [
+        {
+          "part": "controls-speaker.stl",
+          "rotation_deg": 0,
+          "lower_left_mm": [
+            10,
+            10
+          ]
+        },
+        {
+          "part": "controls-top.stl",
+          "rotation_deg": 0,
+          "lower_left_mm": [
+            175,
+            10
+          ]
+        },
+        {
+          "part": "left-top.stl",
+          "rotation_deg": 0,
+          "lower_left_mm": [
+            330,
+            10
+          ]
+        },
+        {
+          "part": "left-bottom.stl",
+          "rotation_deg": 0,
+          "lower_left_mm": [
+            380,
+            10
+          ]
+        }
+      ],
+      "pairwise_intersection": false
+    },
+    "plate-2-screen-edges.stl": {
+      "body_count": 4,
+      "placements": [
+        {
+          "part": "bottom-right.stl",
+          "rotation_deg": 45,
+          "lower_left_mm": [
+            16,
+            12
+          ]
+        },
+        {
+          "part": "top-left.stl",
+          "rotation_deg": 270,
+          "lower_left_mm": [
+            192,
+            20
+          ]
+        },
+        {
+          "part": "bottom-left.stl",
+          "rotation_deg": 90,
+          "lower_left_mm": [
+            96,
+            8
+          ]
+        },
+        {
+          "part": "top-right.stl",
+          "rotation_deg": 90,
+          "lower_left_mm": [
+            14,
+            84
+          ]
+        }
+      ],
+      "pairwise_intersection": false
+    }
+  }
+}

@@ -26,7 +26,7 @@ FRAME_WIDTH=19.05
 FRAME_DEPTH=76.2
 GROOVE_DEPTH=6.35
 EDGE_ALLOWANCE=.25
-IL,IR,IB,IT=-342.5,448.5,-218.275,204.275
+IL,IR,IB,IT=-342.5,461.5,-218.275,204.275
 OL,OR,OB,OT=IL-FRAME_WIDTH,IR+FRAME_WIDTH,IB-FRAME_WIDTH,IT+FRAME_WIDTH
 FRAME_FRONT=WOOD_FRONT+3
 FRAME_REAR=FRAME_FRONT-FRAME_DEPTH
@@ -152,7 +152,7 @@ canvas{flex:1;width:0;min-width:0;height:100%;display:block;touch-action:none}
 <div class="view-buttons"><button id="front">Front</button><button id="rear">Rear</button><button id="angled">Angled</button><button id="fit">Fit view</button></div>
 <div class="zoom-control"><label for="zoom">Zoom <output id="zoom-value" for="zoom">100%</output></label><input id="zoom" type="range" min="25" max="300" step="1" value="100"></div>
 <label class="pattern-control"><input id="testpattern" type="checkbox" checked> Retro test pattern</label>
-<details class="dimensions"><summary>Dimensions and notes</summary><p>Wood: 1/8 inch<br>Display: 662.9 × 418.55 × 44 mm<br>Faceplate: 803.2 × 434.75 mm<br>Frame stock: 3/4 × 3 inch<br>Inner lip underside: 1 mm above glass</p><p>Geometry in millimeters. Display uses a square-edged envelope. Stand and internal hardware are not modeled.</p></details>
+<details class="dimensions"><summary>Dimensions and notes</summary><p>Wood: 1/8 inch<br>Display: 662.9 × 418.55 × 44 mm<br>Faceplate: 816.2 × 434.75 mm<br>Frame stock: 3/4 × 3 inch<br>Inner lip underside: 1 mm above glass</p><p>Geometry in millimeters. Display uses a square-edged envelope. Stand and internal hardware are not modeled.</p></details>
 <section id="parts" aria-label="Layer visibility"><strong>Layers</strong></section>
 </aside><canvas id="view" aria-label="Interactive 3D assembly"></canvas></main>
 <script>const raw=__DATA__;const c=document.getElementById('view'),g=c.getContext('webgl',{antialias:true});
@@ -232,7 +232,7 @@ function draw(){syncZoom();const d=devicePixelRatio||1;c.width=Math.round(c.clie
 for(const o of parts){if(!o.visible)continue;g.bindBuffer(g.ARRAY_BUFFER,o.buffer);g.vertexAttribPointer(pos,3,g.FLOAT,false,24,0);g.vertexAttribPointer(nor,3,g.FLOAT,false,24,12);g.uniform3fv(loc.color,o.color);g.uniform1f(loc.screen,o.name==='display'&&document.getElementById('testpattern').checked?1:0);
 g.drawArrays(g.TRIANGLES,0,o.count)}}
 document.getElementById('front').onclick=()=>{yaw=0;pitch=0;draw()};document.getElementById('rear').onclick=()=>{yaw=Math.PI;pitch=0;draw()};document.getElementById('angled').onclick=()=>{yaw=-.3;pitch=.3;draw()};
-let drag=false,x=0,y=0;c.onpointerdown=e=>{drag=true;x=e.clientX;y=e.clientY;c.setPointerCapture(e.pointerId)};c.onpointerup=()=>drag=false;c.onpointermove=e=>{if(!drag)return;yaw+=(e.clientX-x)*.006;pitch+=(e.clientY-y)*.006;x=e.clientX;y=e.clientY;draw()};c.onwheel=e=>{e.preventDefault();zoom=Math.max(baseZoom()*.25,Math.min(baseZoom()*3,zoom*Math.exp(-e.deltaY*.001)));draw()};document.getElementById('testpattern').onchange=draw;function baseZoom(){return Math.min(1.75*(c.clientWidth/c.clientHeight)/829.1,1.75/460.65)}
+let drag=false,x=0,y=0;c.onpointerdown=e=>{drag=true;x=e.clientX;y=e.clientY;c.setPointerCapture(e.pointerId)};c.onpointerup=()=>drag=false;c.onpointermove=e=>{if(!drag)return;yaw+=(e.clientX-x)*.006;pitch+=(e.clientY-y)*.006;x=e.clientX;y=e.clientY;draw()};c.onwheel=e=>{e.preventDefault();zoom=Math.max(baseZoom()*.25,Math.min(baseZoom()*3,zoom*Math.exp(-e.deltaY*.001)));draw()};document.getElementById('testpattern').onchange=draw;function baseZoom(){return Math.min(1.75*(c.clientWidth/c.clientHeight)/842.1,1.75/460.65)}
 function syncZoom(){const percent=Math.round(100*zoom/baseZoom());document.getElementById('zoom').value=Math.max(25,Math.min(300,percent));document.getElementById('zoom-value').textContent=percent+'%'}
 function fitView(){zoom=baseZoom();draw()}
 document.getElementById('zoom').oninput=e=>{zoom=baseZoom()*Number(e.target.value)/100;draw()};document.getElementById('fit').onclick=fitView;window.addEventListener('resize',draw);fitView();</script>'''
@@ -337,7 +337,7 @@ for y in KNOB_Y:
     ax.add_patch(Circle((CX,y),19.8,facecolor='#cfaf66',edgecolor='#dfc37e'))
     ax.add_patch(Rectangle((CX-.8,y+11),1.6,6.5,facecolor='#222'))
 ax.set(xlim=(LEFT-12,RIGHT+12),ylim=(-230,220),aspect='equal')
-ax.set_axis_off();fig.suptitle('RETRO TV FRAME · MITERED GROOVED WOOD FRAME',fontsize=17,weight='bold')
+ax.set_axis_off();fig.suptitle('RETRO TV FRAME · 15 MM CONTROL-SIDE MARGIN',fontsize=17,weight='bold')
 # Four mitered front rail faces.
 for outline in rail_shapes.values():
     ax.add_patch(Polygon(outline,facecolor='#754823',edgecolor='#563619',lw=.7))
@@ -386,7 +386,7 @@ with PdfPages(OUT/'faceplate-letter-tiled.pdf', metadata={'CreationDate':None,'M
         'Dashed Ø12 access circles: leave undrilled until\n'
         'the control hardware and shaft support are selected.\n'
         'No fastener holes are needed for glued mounting.\n\n'
-        'Panel: 803.2 × 434.75 mm; screen opening: 640 × 369 mm.\n'
+        'Panel: 816.2 × 434.75 mm; screen opening: 640 × 369 mm.\n'
         'Screen contour is curved, NOT a bounding rectangle.\n'
         'Grille opening: 100 × 160 mm, corner radius 8 mm.\n'
         'View is FRONT / TOP UP. Attach template to wood front.\n\n'
