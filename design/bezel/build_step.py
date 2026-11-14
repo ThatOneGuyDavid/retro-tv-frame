@@ -1,4 +1,4 @@
-"""Reconstruct the v8 bezel as curved B-rep solids; independent of mesh builder.
+"""Reconstruct the v9 bezel as curved B-rep solids; independent of mesh builder.
 Requires cadquery==2.8.0, numpy, trimesh, scipy. Does not overwrite print STLs.
 """
 from pathlib import Path
@@ -10,6 +10,7 @@ from OCP.BRepBndLib import BRepBndLib
 from OCP.Bnd import Bnd_Box
 
 OUT = Path(__file__).resolve().parent
+RIGHT_FLANGE_MAX_X=330.5
 
 def bounds(shape):
     bb=Bnd_Box()
@@ -77,6 +78,7 @@ if envelope.Volume()<0: envelope=cq.Shape.cast(envelope.wrapped.Reversed())
 assert envelope.isValid()
 print("Flange",flush=True)
 flange=cq.Solid.extrudeLinear(outline(-1,27),[outline(0,27)],cq.Vector(0,0,3))
+flange=flange.cut(box([200,600,10],[RIGHT_FLANGE_MAX_X+100,0,28.5]))
 body=body.fuse(flange)
 print("Joint pads",flush=True)
 for y in [-176.,176.]:
@@ -106,7 +108,7 @@ for name,x in [('left',-250),('right',250)]:
     part=body.intersect(box([500,600,100],[x,0,20])).clean()
     # Preserve the original STL datum; spline bounding boxes can be conservative.
     parts['bezel-'+name]=part.translate((340.5 if name=='left' else 0,192.,-1.))
-report={'method':'Curved B-rep reconstruction from v8 equations; original STLs unchanged', 'units':'mm','parts':{}}
+report={'method':'Curved B-rep reconstruction from v9 equations; print STLs unchanged by STEP build', 'units':'mm','right_flange_max_x_mm':RIGHT_FLANGE_MAX_X,'parts':{}}
 for name,part in parts.items():
     assert part.isValid() and len(part.Solids())==1,name
     path=OUT/(name+'.step'); cq.exporters.export(part,str(path))

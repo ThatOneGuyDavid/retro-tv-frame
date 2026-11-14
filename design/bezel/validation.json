@@ -29,11 +29,11 @@
     "positive_volume": true,
     "surface_components": 1,
     "bounds_mm": [
-      340.5,
+      330.5,
       384.0,
       29.0
     ],
-    "volume_cm3": 126.144
+    "volume_cm3": 117.659
   },
   "joint-test-left": {
     "watertight": true,
@@ -95,11 +95,11 @@
     "positive_volume": true,
     "surface_components": 1,
     "bounds_mm": [
-      681.0,
+      671.0,
       384.0,
       29.0
     ],
-    "volume_cm3": 252.288
+    "volume_cm3": 243.803
   },
   "design": {
     "inner_lip_underside_z_mm": 1,
@@ -346,6 +346,8 @@
       }
     ],
     "display_intersection_mm3": 0.0,
-    "print_slicing_and_physical_fit_verified": false
+    "print_slicing_and_physical_fit_verified": false,
+    "right_flange_max_x_mm": 330.5,
+    "right_flange_width_at_center_mm": 10.0
   }
 }

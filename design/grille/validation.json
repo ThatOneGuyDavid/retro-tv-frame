@@ -4,7 +4,7 @@
     "surface_components": 1,
     "positive_volume": true,
     "bounds_mm": [
-      100.0,
+      116.0,
       192.0,
       3.0
     ]
@@ -24,6 +24,8 @@
     "hole_diameter_mm": 4.8,
     "pitch_mm": 7.0,
     "minimum_web_mm": 2.2,
-    "visible_open_area_percent": 27.2
+    "visible_open_area_percent": 27.2,
+    "side_overlap_under_faceplate_mm": 8.0,
+    "top_bottom_overlap_under_faceplate_mm": 16.0
   }
 }

@@ -1,6 +1,6 @@
 # How the fitting features work
 
-Current green geometry: **bezel v8**, with a successful test print reported on 2026-11-10. Display fit and assembly validation remain separate workshop checks.
+Current green geometry: **bezel v9**, with a narrowed right hidden flange. The earlier v8 test print was reported successful on 2026-11-10. V9 print fit and assembly validation remain separate workshop checks.
 
 ![Underside plan and section](../design/bezel/bezel-fit-preview.png)
 
@@ -32,7 +32,7 @@ Full registration faces have 0.3 mm nominal clearance from the factory wall, mea
 
 The black control plate mounts the two circular dials; rings and caps are separate for finishing. Painted grooves replace a tiny loose pointer, and a wide trim ring gives a manageable printable part. Removable blank hubs let the visible controls stay the same when shaft hardware changes.
 
-The grille's 240 Ø4.8 mm holes have 2.2 mm webs on a 7 mm pitch. Its 27.2% visible open area is a geometric figure, not an acoustic rating. Top/bottom mounting bands leave the sides narrow, allowing a 2 mm clearance between the complete grille and green flange envelopes. A speaker and enclosure need their own design behind it.
+The grille's 240 Ø4.8 mm holes have 2.2 mm webs on a 7 mm pitch. Its 27.2% visible open area is a geometric figure, not an acoustic rating. The v3 body adds 8 mm of hidden side overlap beyond the unchanged faceplate opening. The bezel's right glue flange stops at X330.5 mm, leaving a nominal 4 mm gap to the grille at X334.5 mm. The flange retains 10 mm beyond the visible green edge at its side midpoint. A speaker and enclosure need their own design behind it.
 
 ## Captured wooden faceplate
 

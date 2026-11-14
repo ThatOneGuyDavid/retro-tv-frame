@@ -2,11 +2,11 @@
 
 **[Open the live interactive preview](https://thatoneguydavid.github.io/retro-tv-frame/design/assembly/assembly-viewer.html)** — rotate the assembly, explore the layer tree, and zoom in on the parts.
 
-**Work in progress — shared before final assembly.** The current printable bezel is **v8**, with a flat inner printing land. Its test print was reported successful on **2026-11-10**. Display fit, bonding, woodworking and final assembly checks are still underway. Dimensions and instructions may change as the build progresses. The images below are CAD views, not finished-build photographs.
+**Work in progress — shared before final assembly.** The current printable bezel is **v9**, with a narrower right glue flange and the same flat inner printing land. The earlier v8 test print was reported successful on **2026-11-10**; v9 and the widened grille have not been physically tested. Display fit, bonding, woodworking and final assembly checks are still underway. The images below are CAD views, not finished-build photographs.
 
 A modern flat display dressed as a 1960s–1970s television: sculpted olive-green surround, brass-finished controls, a perforated speaker grille, and a mitered wooden cabinet frame.
 
-![Current CAD assembly with 15 mm control-side margin](design/assembly/assembly-front-15mm.png)
+![Current CAD assembly with 15 mm control-side margin and revised hidden grille fit](design/assembly/assembly-front-v10.png)
 
 *CAD illustration of the supplied design, not a photograph of a completed build.*
 
@@ -21,6 +21,7 @@ The printable parts, woodworking template, assembly model, and editable geometry
 - **Built-in fitting features:** twelve glue feet establish the installed height; eight tapered locating tabs register against the factory frame's inside walls and keep the print off the glass.
 - **Paintable modular knobs:** each control has a black dial, separate brass trim, fluted grip, paint-filled index cap, and removable hub. The hub is left blank so the visible knob does not dictate the eventual shaft hardware.
 - **Single-piece grille:** circular perforations, a solid border, and top/bottom mounting bands keep the control column compact.
+- **More hidden grille overlap:** the grille extends 8 mm behind the wood on each side; the green bezel's right flange is narrowed to keep a 4 mm nominal gap between hidden parts.
 - **Real woodworking geometry:** four mitered 3/4 × 3 inch rails capture the thin faceplate in a 1/4-inch-deep groove, with clearance around the display and the printed parts.
 - **Three faceplate pattern methods:** a ten-tile US Letter paper template, a one-sheet A1 PDF with an eight-piece printable pattern, and a seven-piece printable pattern. All share the revised outer edge and original openings.
 
@@ -39,19 +40,19 @@ The printable parts, woodworking template, assembly model, and editable geometry
 
 | Item | Quantity | Files |
 | --- | ---: | --- |
-| Green bezel v8 | One left, one right | [Left](design/bezel/bezel-left.stl), [right](design/bezel/bezel-right.stl) |
+| Green bezel v9 | One left, one right | [Left](design/bezel/bezel-left.stl), [right](design/bezel/bezel-right.stl) |
 | Rear joining keys | 2 | [Key](design/bezel/joining-key.stl) |
 | Knobs | Two sets of five parts | [Knob parts](docs/build-guide.md#knobs) |
 | Knob mounting plate | 1 | [Plate](design/assembly/knob-mounting-plate.stl) |
-| Speaker grille | 1 | [Grille](design/grille/speaker-grille.stl) |
+| Speaker grille v3 | 1 | [Grille](design/grille/speaker-grille.stl), [rear preview](design/grille/grille-preview.png) |
 | Wooden faceplate | 1 | [Letter PDF](design/faceplate/faceplate-letter-tiled.pdf), [full-size SVG](design/faceplate/faceplate-full-size.svg), [A1 PDF and eight-piece pattern](design/faceplate-a1-and-eight/README.md), [seven-piece pattern](design/faceplate-seven/README.md) |
 | Wooden frame | Four mitered rails | [Cut list](design/assembly/frame-cut-list.csv), [section drawing](design/assembly/frame-section.png) |
 
-The files in `design/bezel/` are the current **bezel v8** geometry; filenames stay stable so links remain useful. Use these files rather than any older local bezel exports.
+The files in `design/bezel/` are the current **bezel v9** geometry; filenames stay stable so links remain useful. The v8 test print is historical evidence for its flat land, not a physical test of the new right flange.
 
 STLs use **millimeters**. The bezel halves are mirror images; print one of each. Their inner rims have a flat printing land at **Z=0**, 2.2 mm wide at the top/bottom and 2.7 mm at the sides, blended into the underside. Files named `assembled` or `reference`, the frame STLs, and the GLB are inspection models rather than print layouts.
 
-Each bezel half is **340.5 × 384 × 29 mm**, before supports or brim. The design was laid out for a 420 mm-square printer bed. Check the complete sliced footprint, not just the model bounds.
+The left bezel half is **340.5 × 384 × 29 mm** and the revised right half is **330.5 × 384 × 29 mm**, before supports or brim. The design was laid out for a 420 mm-square printer bed. Check the complete sliced footprint, not just the model bounds.
 
 ## Size and scope
 
@@ -63,7 +64,7 @@ See [build-guide.md](docs/build-guide.md) for assembly and finishing, [features.
 
 ## Editable source
 
-The green bezel is also supplied as [editable STEP solids](design/bezel/STEP.md): [full bezel](design/bezel/bezel-assembled.step), [left half](design/bezel/bezel-left.step), [right half](design/bezel/bezel-right.step), and [joining key](design/bezel/joining-key.step). These are curved B-rep reconstructions of v8. STEP contains solid geometry; the accompanying CAD builder supplies editable equations rather than a native feature tree. Existing print STLs remain the print reference.
+The green bezel is also supplied as [editable STEP solids](design/bezel/STEP.md): [full bezel](design/bezel/bezel-assembled.step), [left half](design/bezel/bezel-left.step), [right half](design/bezel/bezel-right.step), and [joining key](design/bezel/joining-key.step). These are curved B-rep reconstructions of v9. STEP contains solid geometry; the accompanying CAD builder supplies editable equations rather than a native feature tree. The v9 print STLs remain the print reference.
 
 Python scripts generate the meshes, fit checks, diagrams, offline viewer, cut list, and templates.
 

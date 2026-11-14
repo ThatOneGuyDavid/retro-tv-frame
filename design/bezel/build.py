@@ -16,6 +16,7 @@ BLEND_T=.85
 TS=np.unique(np.r_[np.linspace(0,1,97),BLEND_T,LAND_T])
 SHELL=2.4
 PEAK=30.
+RIGHT_FLANGE_MAX_X=330.5
 
 def contour(t):
     w,h=np.array([641.,370.])*(1-t)+np.array([587.,326.])*t
@@ -24,6 +25,12 @@ def contour(t):
     a=np.linspace(0,2*np.pi,N,endpoint=False);c,s=np.cos(a),np.sin(a)
     c[abs(c)<1e-12]=0;s[abs(s)<1e-12]=0
     return np.column_stack((w/2*np.sign(c)*abs(c)**(2/n),h/2*np.sign(s)*abs(s)**(2/n)))
+
+def flange_contour(t):
+    xy=contour(t)
+    if t==-1:
+        xy[:,0]=np.minimum(xy[:,0],RIGHT_FLANGE_MAX_X)
+    return xy
 
 def original_rear(t,xy):
     # Single analytic curve: no factory-clearance clamp or intermediate shelf.
@@ -63,7 +70,7 @@ def diff(m,*cuts):return tm.boolean.difference([m]+list(cuts),engine='manifold')
 def union(*ms):return tm.boolean.union(list(ms),engine='manifold')
 
 # Peak-level outward-only flange. No inward flange or deep skirt.
-flange=loft([np.column_stack((contour(t),np.full(N,z))) for t,z in [(-1,27),(-1,30),(0,30),(0,27)]])
+flange=loft([np.column_stack((flange_contour(t),np.full(N,z))) for t,z in [(-1,27),(-1,30),(0,30),(0,27)]])
 body=union(shell,flange)
 
 # Local joint pads are behind the curve, 7 mm from the inner outline.
@@ -187,14 +194,16 @@ report['design']={'inner_lip_underside_z_mm':1,'inner_lip_top_z_mm':3.4,'peak_z_
     'key_size_mm':[27.6,9.6,1],'key_seated_z_mm':[10.1,11.1],
     'key_to_factory_face_min_z_gap_mm':3.1,'factory_face_z_mm':7,
     'post_contact_z_mm':7.2,'adhesive_allowance_mm':.2,'post_count':12,'posts':post_report,
-    'locator_count':8,'locators':locator_report,'display_intersection_mm3':0.,'print_slicing_and_physical_fit_verified':False}
+    'locator_count':8,'locators':locator_report,'display_intersection_mm3':0.,'print_slicing_and_physical_fit_verified':False,
+    'right_flange_max_x_mm':RIGHT_FLANGE_MAX_X,
+    'right_flange_width_at_center_mm':RIGHT_FLANGE_MAX_X-641/2}
 (OUT/'validation.json').write_text(json.dumps(report,indent=2)+'\n')
 
 fig,axs=plt.subplots(1,2,figsize=(15,7),facecolor='#f3efe5',gridspec_kw={'width_ratios':[1.5,1]})
 ax=axs[0]
 ax.add_patch(Rectangle((-331.45,-216.275),662.9,418.55,facecolor='#777',alpha=.4))
 ax.add_patch(Rectangle((-298.45,-168.275),596.9,336.55,facecolor='#222'))
-ax.add_patch(Polygon(contour(-1),facecolor='#9b9f56'))
+ax.add_patch(Polygon(flange_contour(-1),facecolor='#9b9f56'))
 ax.add_patch(Polygon(contour(0),facecolor='#79842d'))
 ax.add_patch(Polygon(contour(1),facecolor='#222'))
 for x,y in post_xy:ax.add_patch(Rectangle((x-4,y-4),8,8,facecolor='#eaad52',edgecolor='#70471a'))
@@ -219,6 +228,6 @@ ax.add_patch(Rectangle((185,27),7,3,facecolor='#9b9f56',label='Peak-level flange
 ax.annotate('1 mm air gap',xy=(163,1),xytext=(150,6),arrowprops={'arrowstyle':'->'},fontsize=10)
 ax.set(xlim=(150,205),ylim=(-2,35),xlabel='Distance above screen center (mm)',ylabel='Forward from glass (mm)',title='TOP-CENTER SECTION')
 ax.legend(fontsize=8,loc='upper left')
-fig.suptitle('GREEN BEZEL · FLAT INNER PRINTING LAND',fontsize=19,weight='bold')
+fig.suptitle('GREEN BEZEL · NARROW RIGHT GLUE FLANGE',fontsize=19,weight='bold')
 fig.tight_layout(rect=(0,0,1,.94));fig.savefig(OUT/'bezel-fit-preview.png',dpi=150);plt.close(fig)
 print(json.dumps(report['design'],indent=2))

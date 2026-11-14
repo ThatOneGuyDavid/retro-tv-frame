@@ -11,6 +11,7 @@ from matplotlib.patches import FancyBboxPatch,Circle,Rectangle
 OUT=Path(__file__).resolve().parent
 WIDTH,HEIGHT=100.,160.
 FLANGE=16.
+SIDE_FLANGE=8.
 THICK=3.
 HOLE=4.8
 PITCH=7.
@@ -34,7 +35,7 @@ def cylinder(x,y,r):
 
 centers=[(float(x),float(y)) for x in (np.arange(12)-5.5)*PITCH for y in (np.arange(20)-9.5)*PITCH]
 mounts=[(x,y) for x in [-30.,30.] for y in [-88.,88.]]
-body=rounded(WIDTH,HEIGHT+2*FLANGE,8,0,THICK)
+body=rounded(WIDTH+2*SIDE_FLANGE,HEIGHT+2*FLANGE,8,0,THICK)
 cuts=[cylinder(x,y,HOLE/2) for x,y in centers]
 # Four horizontal capsule mounting slots, Ø3.6 × 7.6 mm.
 for x,y in mounts:
@@ -67,13 +68,15 @@ for name,m in [('speaker-grille',body),('perforation-test',sample)]:
 openarea=len(centers)*np.pi*(HOLE/2)**2
 visiblearea=WIDTH*HEIGHT-(4-np.pi)*8**2
 report['pattern']={'hole_count':len(centers),'hole_diameter_mm':HOLE,'pitch_mm':PITCH,
-                   'minimum_web_mm':PITCH-HOLE,'visible_open_area_percent':round(100*openarea/visiblearea,1)}
+                   'minimum_web_mm':PITCH-HOLE,'visible_open_area_percent':round(100*openarea/visiblearea,1),
+                   'side_overlap_under_faceplate_mm':SIDE_FLANGE,
+                   'top_bottom_overlap_under_faceplate_mm':FLANGE}
 (OUT/'validation.json').write_text(json.dumps(report,indent=2)+'\n')
 
 fig,axs=plt.subplots(1,2,figsize=(11,8),facecolor='#f3efe5')
 gold='#bb984b'
 for ax,rear in zip(axs,[False,True]):
-    w,h=(100,192) if rear else (100,160)
+    w,h=(116,192) if rear else (100,160)
     ax.add_patch(FancyBboxPatch((-w/2,-h/2),w,h,boxstyle=f'round,pad=0,rounding_size={8}',facecolor=gold,edgecolor='#785d28',lw=2))
     for x,y in centers:ax.add_patch(Circle((x,y),HOLE/2,color='#25241e'))
     if rear:
@@ -81,9 +84,9 @@ for ax,rear in zip(axs,[False,True]):
         for x,y in mounts:
             ax.plot([x-2,x+2],[y,y],color='#25241e',lw=4,solid_capstyle='round')
     ax.set(xlim=(-75,75),ylim=(-105,105),aspect='equal')
-    ax.set_axis_off();ax.set_title('REAR · top/bottom mounting bands' if rear else 'FRONT · wood conceals flange',fontsize=13)
-fig.suptitle('SPEAKER GRILLE ·  TOP/BOTTOM MOUNTS',fontsize=18,weight='bold')
-fig.text(.10,.10,'100 × 160 mm visible  |  100 × 192 × 3 mm overall  |  one flat print',fontsize=12)
+    ax.set_axis_off();ax.set_title('REAR · 8 mm side overlap' if rear else 'FRONT · wood conceals flange',fontsize=13)
+fig.suptitle('SPEAKER GRILLE · V3 · HIDDEN SIDE OVERLAP',fontsize=18,weight='bold')
+fig.text(.10,.10,'100 × 160 mm visible  |  116 × 192 × 3 mm overall  |  one flat print',fontsize=12)
 fig.text(.10,.06,'240 holes · Ø4.8 mm · 2.2 mm webs · 27% visible open area · proposed dimensions',fontsize=11)
 fig.tight_layout(rect=(0,.13,1,.94));fig.savefig(OUT/'grille-preview.png',dpi=150);plt.close(fig)
 print(json.dumps(report,indent=2))

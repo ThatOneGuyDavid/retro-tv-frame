@@ -26,6 +26,8 @@ if any(abs(a-b)>1e-5 for a,b in zip(assembly['faceplate_size_mm'],[816.2,434.75]
     errors.append('Faceplate size mismatch')
 if abs(assembly['gaps']['trim_to_knob_plate_right_mm']-15)>1e-5:
     errors.append('Control-side margin mismatch')
+if abs(assembly['gaps']['bezel_to_grille_flange_x_mm']-4)>1e-5:
+    errors.append('Bezel-to-grille flange gap mismatch')
 if any(abs(a-b)>1e-5 for a,b in zip(assembly['frame']['outside_size_mm'],[842.1,460.65])):
     errors.append('Frame size mismatch')
 if len(assembly['pair_checks'])!=210:errors.append('Expected 210 assembly pair checks')
@@ -39,6 +41,11 @@ bezel=json.loads((ROOT/'design/bezel/validation.json').read_text())['design']
 if bezel['locator_count']!=8 or bezel['post_count']!=12:errors.append('Fitting feature count mismatch')
 if bezel['inner_lip_underside_z_mm']!=1:errors.append('Glass-gap datum changed')
 if bezel['joint_min_inner_edge_clearance_mm']<6:errors.append('Joint too close to opening')
+if abs(bezel['right_flange_max_x_mm']-330.5)>1e-5 or abs(bezel['right_flange_width_at_center_mm']-10)>1e-5:
+    errors.append('Right bezel flange width mismatch')
+grille=json.loads((ROOT/'design/grille/validation.json').read_text())
+if abs(grille['pattern']['side_overlap_under_faceplate_mm']-8)>1e-5 or abs(grille['speaker-grille']['bounds_mm'][0]-116)>1e-5:
+    errors.append('Speaker-grille side overlap mismatch')
 template=json.loads((ROOT/'design/faceplate/validation.json').read_text())
 if any(abs(a-b)>1e-5 for a,b in zip(template['panel_size_mm'],[816.2,434.75])):
     errors.append('Letter template size mismatch')
@@ -66,4 +73,4 @@ for path in ROOT.rglob('*.md'):
         if not target or '://' in target or target.startswith('mailto:'):continue
         if not (path.parent/target).exists():errors.append(f'Broken link in {path.relative_to(ROOT)}: {target}')
 if errors:raise SystemExit('\n'.join(errors))
-print(f'PASS: {checked} printed STL solids; 210 assembly pairs; 15 mm margin; Letter, A1/eight and seven-piece patterns; local links.')
+print(f'PASS: {checked} printed STL solids; 210 assembly pairs; 15 mm margin; 10 mm right flange; 8 mm grille overlap; 4 mm clearance; Letter, A1/eight and seven-piece patterns; local links.')

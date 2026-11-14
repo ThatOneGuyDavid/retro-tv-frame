@@ -1,6 +1,6 @@
 # Example dimensions and coordinate system
 
-These dimensions describe the current **bezel v8** and matching assembly. The v8 test print was successful; installation fit remains to be checked.
+These dimensions describe the current **bezel v9**, **grille v3** and matching assembly. The earlier v8 bezel test print was reported successful; the revised parts and installation fit remain to be checked.
 
 All dimensions are millimeters unless labeled otherwise. These measurements describe a **generic square-edged reference envelope**, not a named display model. The glass and housing are modeled as one solid unit; no internal display construction is inferred.
 
@@ -22,8 +22,9 @@ Origin is the **center of the viewing surface**, with glass front **Z=0**, X rig
 | --- | --- |
 | Green opening | 587 × 326 bounding size, exponent-4 superellipse |
 | Green sculpted outside | 641 × 370, exponent-8 superellipse |
-| Green complete flange | 681 × 384 |
-| Printed half | 340.5 × 384 × 29, independently translated to print Z0 |
+| Green complete flange bounds | X=-340.5..330.5, Y=±192 |
+| Right hidden flange at side midpoint | X320.5..330.5, 10 wide |
+| Printed halves | Left 340.5 × 384 × 29; right 330.5 × 384 × 29; each translated to print Z0 |
 | Green inner underside / visible top | Z1 / Z3.4 |
 | Flat inner printing land | 2.2 mm top/bottom; 2.7 mm sides; installed Z1 / print Z0 |
 | Peak / flange front | Z30 |
@@ -39,9 +40,10 @@ Origin is the **center of the viewing surface**, with glass front **Z=0**, X rig
 | Knob centers | Y130, Y40 |
 | Knob mounting plate | 108 × 186 × 3, center X392.5/Y90 |
 | Dial diameter / grip diameter | 76 / nominal 46 |
-| Grille print | 100 × 192 × 3, center X392.5/Y-102, front Z30 |
+| Grille print | 116 × 192 × 3, center X392.5/Y-102, front Z30 |
 | Visible grille opening | 100 × 160, R8 |
-| Green-to-grille envelope gap | 2 |
+| Grille overlap under faceplate | 8 each side; 16 top/bottom |
+| Green-to-grille hidden gap | 4 at speaker centerline |
 
 The rounded green opening overlaps the straight glass rectangle by approximately 5 mm per axis at the straight middle edges and more at the corners. It is an intentional mask; this is not a design for preserving every pixel of a rectangular image.
 

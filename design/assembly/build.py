@@ -251,8 +251,8 @@ for i,a in enumerate(names):
             assert vol < .05,(a,b,vol)
             checks[a+' / '+b]={'method':'solid intersection','intersection_mm3':round(vol,6)}
 
-gaps={'bezel_to_grille_flange_x_mm':CX-50-340.5,
-      'bezel_to_knob_plate_x_mm':CX-54-340.5,
+gaps={'bezel_to_grille_flange_x_mm':CX-58-330.5,
+      'bezel_to_knob_plate_x_mm':CX-54-330.5,
       'lower_dial_to_grille_visible_y_mm':(40-38)-(GRILLE_Y+80),
       'screen_flange_to_wood_glue_gap_mm':GLUE,
       'grille_to_wood_glue_gap_mm':GLUE,
@@ -276,8 +276,10 @@ def drawing(ax,detail=True):
     ax.add_patch(Rectangle((LEFT,BOTTOM),WIDTH,HEIGHT,fill=False,lw=.8,color='black'))
     ax.add_patch(Polygon(screen_cut,fill=False,lw=.8,color='black'))
     ax.add_patch(Polygon(grille_cut,fill=False,lw=.8,color='black'))
-    ax.add_patch(Polygon(squircle(681,384),fill=False,lw=.5,ls='--',edgecolor='#777'))
-    ax.add_patch(Polygon(rounded(100,192,8,CX,GRILLE_Y),fill=False,lw=.5,ls='--',edgecolor='#777'))
+    bezel_flange=squircle(681,384)
+    bezel_flange[:,0]=np.minimum(bezel_flange[:,0],330.5)
+    ax.add_patch(Polygon(bezel_flange,fill=False,lw=.5,ls='--',edgecolor='#777'))
+    ax.add_patch(Polygon(rounded(116,192,8,CX,GRILLE_Y),fill=False,lw=.5,ls='--',edgecolor='#777'))
     ax.add_patch(Polygon(plate_outline,fill=False,lw=.7,ls='--',edgecolor='#555'))
     ax.add_patch(Rectangle((IL,IB),IR-IL,IT-IB,fill=False,lw=.6,ls='-.',edgecolor='#666'))
     for y in KNOB_Y:
@@ -337,7 +339,7 @@ for y in KNOB_Y:
     ax.add_patch(Circle((CX,y),19.8,facecolor='#cfaf66',edgecolor='#dfc37e'))
     ax.add_patch(Rectangle((CX-.8,y+11),1.6,6.5,facecolor='#222'))
 ax.set(xlim=(LEFT-12,RIGHT+12),ylim=(-230,220),aspect='equal')
-ax.set_axis_off();fig.suptitle('RETRO TV FRAME · 15 MM CONTROL-SIDE MARGIN',fontsize=17,weight='bold')
+ax.set_axis_off();fig.suptitle('RETRO TV FRAME · 15 MM MARGIN · IMPROVED GRILLE FIT',fontsize=17,weight='bold')
 # Four mitered front rail faces.
 for outline in rail_shapes.values():
     ax.add_patch(Polygon(outline,facecolor='#754823',edgecolor='#563619',lw=.7))
@@ -346,12 +348,13 @@ fig.text(.08,.07,'Mitered 3/4 × 3 inch frame · 1/4 inch groove · 2 mm housing
 fig.tight_layout(rect=(0,.1,1,.94))
 fig.savefig(OUT/'assembly-front.png',dpi=160)
 fig.savefig(OUT/'assembly-front-15mm.png',dpi=160)
+fig.savefig(OUT/'assembly-front-v10.png',dpi=160)
 plt.close(fig)
 
 fig,ax=plt.subplots(figsize=(14,7),facecolor='#f3efe5')
 drawing(ax,False)
 ax.text(130,-170,'Dashed: concealed flange envelopes',fontsize=9)
-ax.annotate('2 mm flange gap',xy=(341.5,-100),xytext=(130,-110),arrowprops={'arrowstyle':'->'},fontsize=9)
+ax.annotate('4 mm flange gap',xy=(332.5,-100),xytext=(130,-110),arrowprops={'arrowstyle':'->'},fontsize=9)
 ax.set(xlim=(LEFT-12,RIGHT+12),ylim=(-230,220),aspect='equal');ax.set_axis_off()
 fig.suptitle('FIT STUDY · REAR ENVELOPES OVER FRONT VIEW (NOT MIRRORED)',fontsize=16)
 fig.tight_layout();fig.savefig(OUT/'assembly-clearances.png',dpi=150);plt.close(fig)

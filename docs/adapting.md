@@ -1,6 +1,6 @@
 # Adapt the design to another display
 
-Start from the current **bezel v8** files in `design/bezel/`, including its flat inner printing land. The v8 test print was successful; each adaptation still needs its own print and fit checks.
+Start from the current **bezel v9** files in `design/bezel/`, including its flat inner printing land and narrowed right glue flange. The earlier v8 test print was reported successful; v9 and each adaptation still need print and fit checks.
 
 This is a measured-envelope design, not a universal model that becomes correct by choosing a diagonal screen size. You can use the approach with other displays, but each adaptation needs its own fitting geometry and interference checks. No manufacturer or model name is needed.
 
@@ -82,7 +82,7 @@ Split the bezel into printable parts. Keep the entire joining feature at
 least [distance] mm from the inner opening, clear of the factory housing,
 and hidden behind the smooth face. Include sample joints and locating
 samples. Include a continuous FLAT underside printing land, not a knife edge.
-For the example v8 the land is 2.2 mm top/bottom and 2.7 mm at the sides.
+For the example v9 the land is 2.2 mm top/bottom and 2.7 mm at the sides.
 Export mm STLs with the complete flat contact surface at print Z0;
 keep assembly-coordinate references separate. Reimport and verify substantial,
 connected planar bed-contact area and first-layer brim generation, not only

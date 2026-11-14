@@ -31,8 +31,8 @@
     "bezel_flange_left_clearance_mm": 2.0
   },
   "gaps": {
-    "bezel_to_grille_flange_x_mm": 2.0,
-    "bezel_to_knob_plate_x_mm": -2.0,
+    "bezel_to_grille_flange_x_mm": 4.0,
+    "bezel_to_knob_plate_x_mm": 8.0,
     "lower_dial_to_grille_visible_y_mm": 24.0,
     "screen_flange_to_wood_glue_gap_mm": 0.2,
     "grille_to_wood_glue_gap_mm": 0.2,
@@ -196,7 +196,7 @@
           1.0
         ],
         [
-          340.5,
+          330.5,
           192.0,
           30.0
         ]
@@ -207,12 +207,12 @@
     "grille": {
       "bounds_mm": [
         [
-          342.5,
+          334.5,
           -198.0,
           27.0
         ],
         [
-          442.5,
+          450.5,
           -6.0,
           30.0
         ]
@@ -1336,8 +1336,8 @@
     }
   },
   "source_sha256": {
-    "bezel/bezel-assembled.stl": "b037d3e0c1c369d2f463fe1b672df659bd323e469cd85e6da1bf9c22f29c681a",
-    "grille/speaker-grille.stl": "4e3d562aca783d57dcba56b16d19c792a1dc52effc34021036935a829a7eb559",
+    "bezel/bezel-assembled.stl": "57f4e1641ec258dc39808b25e1c86a271dbbf7fbc7f8a75664f5811647c2768c",
+    "grille/speaker-grille.stl": "76d0332fe37291098e066b24365ad0b76bfde413fb7ca524e7380f30b6e393da",
     "knobs/dial-plate.stl": "44b593945ca94531ec0190027e35ab4d1cfe9be55d24c244b10fc742098d1ed8",
     "knobs/brass-trim.stl": "8cf50bab00d55615cf7eb150d8c48f35f2bb24b8caf1d421d7ca1db3cf4f8657",
     "knobs/fluted-grip.stl": "7281b2de5f05d4a0744c01aa5c5429a70a05280a01e36b0b71e3cddbd61469e1",
